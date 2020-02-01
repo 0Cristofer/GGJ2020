@@ -43,7 +43,6 @@ namespace GameController
 
     public enum InputKey
     {
-        Horizontal, Vertical,
-        Fire1, Jump
+        Fire, Jump
     }
 }

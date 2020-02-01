@@ -84,17 +84,13 @@ namespace GameController
             
                     switch (gameEvent.InputKey)
                     {
-                        case InputKey.Fire1:
+                        case InputKey.Fire:
                             Debug.Log("Game received fire1");
                             gameEvent.PlayerController.Fire1();
                             break;
                         case InputKey.Jump:
                             Debug.Log("Game received jump");
                             gameEvent.PlayerController.Jump();
-                            break;
-                        case InputKey.Horizontal:
-                            break;
-                        case InputKey.Vertical:
                             break;
                         default:
                             Debug.LogWarning("Unhandled Input Event :" + EnumUtil.GetEnumValueName(gameEvent.InputKey));
