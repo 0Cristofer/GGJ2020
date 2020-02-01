@@ -8,6 +8,26 @@ namespace GameController
 {
     public class GameController : MonoBehaviour
     {
+        private List<List<Vector2>> corners =
+        new List<List<Vector2>> {
+            new List<Vector2> {
+                new Vector2(0, 0), new Vector2(0, 1), 
+                new Vector2(1, 0), new Vector2(1, 1)
+            },
+            new List<Vector2> {
+                new Vector2(0, 0), new Vector2(0, 1), 
+                new Vector2(1, 0), new Vector2(1, 1)
+            },
+            new List<Vector2> {
+                new Vector2(0, 0), new Vector2(0, 1), 
+                new Vector2(1, 0), new Vector2(1, 1)
+            },
+            new List<Vector2> {
+                new Vector2(0, 0), new Vector2(0, 1), 
+                new Vector2(1, 0), new Vector2(1, 1)
+            }
+        };
+        
         private const float TickTime = 0.1f;
         private int _tickRate;
         private int _currentTick;
