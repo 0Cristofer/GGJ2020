@@ -9,8 +9,9 @@ namespace Domains
         private ItemColor _itemColor;
         private ItemType _itemType;
 
-        public BearItem(ItemColor itemColor, ItemType itemType)
+        public BearItem(Vector2 position, ItemColor itemColor, ItemType itemType)
         {
+            Position = position;
             _itemColor = itemColor;
             _itemType = itemType;
         }

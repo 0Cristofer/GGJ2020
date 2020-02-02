@@ -1,5 +1,4 @@
-﻿using System;
-using Domains;
+﻿using Domains;
 using UnityEngine;
 
 namespace Controller.Gameplay
@@ -14,7 +13,7 @@ namespace Controller.Gameplay
 
         private void Start()
         {
-            _bearItem = new BearItem(_itemColor, _itemType);
+            _bearItem = new BearItem(WorldUtil.ToGridPos(gameObject.transform.position), _itemColor, _itemType);
         }
 
         public BearItem GetDomain()

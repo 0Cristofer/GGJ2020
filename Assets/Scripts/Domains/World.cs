@@ -18,7 +18,7 @@ namespace Domains
 
         public BearItem PickItem(Player player)
         {
-            BearItem bearItem = _bearItems.First(item => item.Position.Equals(player.Position));
+            BearItem bearItem = _bearItems.FirstOrDefault(item => item.Position.Equals(player.Position));
             
             if (bearItem != null)
                 _bearItems.Remove(bearItem);
