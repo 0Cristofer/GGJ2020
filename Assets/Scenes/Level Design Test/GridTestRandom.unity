@@ -295,7 +295,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (13)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -338,11 +338,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46362290}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.78, y: 1, z: 0}
+  m_LocalPosition: {x: -7.77, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 284760155}
-  m_RootOrder: 29
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &46362292
 SpriteRenderer:
@@ -419,11 +419,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46849745}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.56, y: 3, z: 0}
+  m_LocalPosition: {x: -6.67, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 284760155}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &46849747
 SpriteRenderer:
@@ -500,7 +500,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 57489780}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.44, y: -4.84, z: 0}
+  m_LocalPosition: {x: -9.37, y: -4.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1057523026}
@@ -513,7 +513,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 57489780}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -649,7 +649,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (16)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -679,7 +679,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (9)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -722,11 +722,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94341563}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: -5.56, y: 0, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 284760155}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &94341565
 SpriteRenderer:
@@ -871,7 +871,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (3)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1228,7 +1228,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (19)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1271,11 +1271,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 180232546}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.33, y: -1, z: 0}
+  m_LocalPosition: {x: -6.67, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 284760155}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &180232548
 SpriteRenderer:
@@ -1339,7 +1339,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (11)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1624,9 +1624,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 284760154}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 46362291}
   - {fileID: 1611593264}
   - {fileID: 2005473278}
   - {fileID: 2018728784}
@@ -1650,13 +1651,6 @@ Transform:
   - {fileID: 1519792698}
   - {fileID: 622255070}
   - {fileID: 1204892118}
-  - {fileID: 983092793}
-  - {fileID: 1519611750}
-  - {fileID: 2016781140}
-  - {fileID: 893433121}
-  - {fileID: 1523410647}
-  - {fileID: 2115654886}
-  - {fileID: 46362291}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1685,11 +1679,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300032296}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.11, y: 2, z: 0}
+  m_LocalPosition: {x: -5.56, y: -1, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 284760155}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &300032298
 SpriteRenderer:
@@ -1753,7 +1747,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (33)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1783,7 +1777,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (56)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1975,7 +1969,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (64)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2099,11 +2093,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 435927024}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.11, y: -2, z: 0}
+  m_LocalPosition: {x: -3.33, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 284760155}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &435927026
 SpriteRenderer:
@@ -2167,7 +2161,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (29)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2210,11 +2204,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492025354}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.67, y: 3, z: 0}
+  m_LocalPosition: {x: -2.22, y: 0, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 284760155}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &492025356
 SpriteRenderer:
@@ -2291,11 +2285,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500871301}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.33, y: 1, z: 0}
+  m_LocalPosition: {x: -5.56, y: -3, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 284760155}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &500871303
 SpriteRenderer:
@@ -2359,7 +2353,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (34)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2402,11 +2396,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 507472513}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.22, y: -1, z: 0}
+  m_LocalPosition: {x: -3.33, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 284760155}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &507472515
 SpriteRenderer:
@@ -2470,7 +2464,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (67)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2500,7 +2494,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (63)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2543,7 +2537,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 537130160}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.497, y: -5.166001, z: 0}
+  m_LocalPosition: {x: -9.427, y: -5.166001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1057523026}
@@ -2556,7 +2550,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 537130160}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -2705,11 +2699,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582416170}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.67, y: -1, z: 0}
+  m_LocalPosition: {x: -4.44, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 284760155}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &582416172
 SpriteRenderer:
@@ -2854,7 +2848,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (68)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2884,7 +2878,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (45)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2914,7 +2908,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (35)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3025,7 +3019,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (8)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3068,11 +3062,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 622255069}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.22, y: 4, z: 0}
+  m_LocalPosition: {x: -2.22, y: -1, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 284760155}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &622255071
 SpriteRenderer:
@@ -3217,7 +3211,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (21)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3247,7 +3241,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (37)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3277,7 +3271,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (23)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3401,7 +3395,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 717354122}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.722, y: -4.9170012, z: 0}
+  m_LocalPosition: {x: -9.652, y: -4.9170012, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1057523026}
@@ -3414,7 +3408,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 717354122}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -3469,7 +3463,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (74)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3499,7 +3493,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (25)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3529,7 +3523,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (73)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3640,7 +3634,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (71)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3670,7 +3664,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (53)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3781,7 +3775,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (36)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3811,7 +3805,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (79)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3841,7 +3835,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (40)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3884,11 +3878,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 893433120}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.87, y: 3.21, z: 0}
+  m_LocalPosition: {x: 8.18, y: 3.204815, z: 9.824219}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 284760155}
-  m_RootOrder: 26
+  m_Father: {fileID: 899475260}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &893433122
 SpriteRenderer:
@@ -3897,7 +3891,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 893433120}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -4021,6 +4015,42 @@ Transform:
   m_Father: {fileID: 1288379525}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &899475259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 899475260}
+  m_Layer: 0
+  m_Name: TargetB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &899475260
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899475259}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.6772246, y: 0.03518498, z: -9.824219}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 983092793}
+  - {fileID: 1519611750}
+  - {fileID: 2016781140}
+  - {fileID: 893433121}
+  - {fileID: 1523410647}
+  - {fileID: 2115654886}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &919904523
 GameObject:
   m_ObjectHideFlags: 0
@@ -4114,7 +4144,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (77)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4157,11 +4187,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 926915456}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.33, y: -3, z: 0}
+  m_LocalPosition: {x: -4.44, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 284760155}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &926915458
 SpriteRenderer:
@@ -4306,7 +4336,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (46)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4336,7 +4366,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (18)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4379,11 +4409,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954706689}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.22, y: 3, z: 0}
+  m_LocalPosition: {x: -4.44, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 284760155}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &954706691
 SpriteRenderer:
@@ -4447,7 +4477,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (41)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4652,11 +4682,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983092792}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.35, y: 3.25, z: 0}
+  m_LocalPosition: {x: 7.6600003, y: 3.2448149, z: 9.824219}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 284760155}
-  m_RootOrder: 23
+  m_Father: {fileID: 899475260}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &983092794
 SpriteRenderer:
@@ -4665,7 +4695,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983092792}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -4733,11 +4763,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991072545}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.33, y: 1, z: 0}
+  m_LocalPosition: {x: -3.33, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 284760155}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &991072547
 SpriteRenderer:
@@ -5240,7 +5270,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (27)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5468,7 +5498,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (61)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5511,11 +5541,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112275762}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.56, y: -3, z: 0}
+  m_LocalPosition: {x: -6.67, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 284760155}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1112275764
 SpriteRenderer:
@@ -5579,7 +5609,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (52)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5703,11 +5733,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1167797516}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.11, y: 1, z: 0}
+  m_LocalPosition: {x: -3.33, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 284760155}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1167797518
 SpriteRenderer:
@@ -5853,11 +5883,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204892117}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.56, y: 0, z: 0}
+  m_LocalPosition: {x: -2.22, y: -2, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 284760155}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1204892119
 SpriteRenderer:
@@ -5921,7 +5951,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (38)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5951,7 +5981,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (12)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5981,7 +6011,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (31)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6126,7 +6156,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (59)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6412,7 +6442,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348472085}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.733, y: -5.4060006, z: 0}
+  m_LocalPosition: {x: -9.663, y: -5.4060006, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1057523026}
@@ -6425,7 +6455,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348472085}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -6480,7 +6510,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (76)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6510,7 +6540,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (58)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6621,7 +6651,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (5)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6651,7 +6681,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (24)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6762,7 +6792,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (55)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6792,7 +6822,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (48)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6997,11 +7027,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1494827762}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.67, y: 1, z: 0}
+  m_LocalPosition: {x: -4.44, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 284760155}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1494827764
 SpriteRenderer:
@@ -7159,11 +7189,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519611749}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.87, y: 3.6799994, z: 0}
+  m_LocalPosition: {x: 8.18, y: 3.6748142, z: 9.824219}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 284760155}
-  m_RootOrder: 24
+  m_Father: {fileID: 899475260}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1519611751
 SpriteRenderer:
@@ -7172,7 +7202,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519611749}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -7240,11 +7270,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519792697}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.67, y: -3, z: 0}
+  m_LocalPosition: {x: -2.22, y: -3, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 284760155}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1519792699
 SpriteRenderer:
@@ -7321,11 +7351,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1523410646}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.43, y: 3.6999998, z: 0}
+  m_LocalPosition: {x: 7.7400002, y: 3.6948147, z: 9.824219}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 284760155}
-  m_RootOrder: 27
+  m_Father: {fileID: 899475260}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1523410648
 SpriteRenderer:
@@ -7334,7 +7364,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1523410646}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -7402,7 +7432,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532004111}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.252, y: -4.996001, z: 0}
+  m_LocalPosition: {x: -9.182, y: -4.996001, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1057523026}
@@ -7415,7 +7445,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532004111}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -7470,7 +7500,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (14)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -7581,7 +7611,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (42)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -7624,11 +7654,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1562648705}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.56, y: -1, z: 0}
+  m_LocalPosition: {x: -5.56, y: -2, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 284760155}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1562648707
 SpriteRenderer:
@@ -7692,7 +7722,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (69)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -7735,11 +7765,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1603522999}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.56, y: 4, z: 0}
+  m_LocalPosition: {x: -6.67, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 284760155}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1603523001
 SpriteRenderer:
@@ -7816,11 +7846,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611593263}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.77, y: -1, z: 0}
+  m_LocalPosition: {x: -7.78, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 284760155}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1611593265
 SpriteRenderer:
@@ -7884,7 +7914,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (70)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -7927,7 +7957,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646950404}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.278, y: -5.4220014, z: 0}
+  m_LocalPosition: {x: -9.208, y: -5.4220014, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1057523026}
@@ -7940,7 +7970,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646950404}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -8157,7 +8187,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (60)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8187,7 +8217,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (44)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8217,7 +8247,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (47)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8247,7 +8277,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (72)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8277,7 +8307,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (78)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8307,7 +8337,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (54)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8337,7 +8367,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (30)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8367,7 +8397,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (75)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8397,7 +8427,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (28)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8427,7 +8457,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (10)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8457,7 +8487,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8487,7 +8517,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (57)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8517,7 +8547,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8547,7 +8577,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (15)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8740,7 +8770,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (32)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8770,7 +8800,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (43)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8800,7 +8830,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (22)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8830,7 +8860,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (2)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8860,7 +8890,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (7)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8971,7 +9001,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (20)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9001,7 +9031,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (39)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9031,7 +9061,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (17)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9061,7 +9091,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (65)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9091,7 +9121,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (66)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9108,6 +9138,177 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2101130103}
   m_RootOrder: 63
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1990299818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1990299820}
+  - component: {fileID: 1990299819}
+  m_Layer: 0
+  m_Name: PiecesGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1990299819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990299818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d159d8960500a1a4d9f701495664f670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pieceHeadList:
+  - {fileID: 582416170}
+  - {fileID: 926915456}
+  - {fileID: 954706689}
+  - {fileID: 1494827762}
+  pieceTorsoList:
+  - {fileID: 46362290}
+  - {fileID: 1611593263}
+  - {fileID: 2005473277}
+  - {fileID: 2018728783}
+  pieceArmLeftList:
+  - {fileID: 1112275762}
+  - {fileID: 46849745}
+  - {fileID: 180232546}
+  - {fileID: 1603522999}
+  pieceArmRightlist:
+  - {fileID: 94341563}
+  - {fileID: 500871301}
+  - {fileID: 300032296}
+  - {fileID: 1562648705}
+  pieceLegLeftList:
+  - {fileID: 507472513}
+  - {fileID: 991072545}
+  - {fileID: 1167797516}
+  - {fileID: 435927024}
+  pieceLegRightList:
+  - {fileID: 492025354}
+  - {fileID: 1519792697}
+  - {fileID: 622255069}
+  - {fileID: 1204892117}
+  groupLeftList:
+  - {fileID: 1807310433}
+  - {fileID: 1813450809}
+  - {fileID: 1928517766}
+  - {fileID: 124674569}
+  - {fileID: 2090663554}
+  - {fileID: 1399874877}
+  - {fileID: 2052901823}
+  - {fileID: 1929318260}
+  - {fileID: 615698036}
+  - {fileID: 83810047}
+  - {fileID: 1805667510}
+  - {fileID: 196274410}
+  - {fileID: 1264536971}
+  - {fileID: 39116066}
+  - {fileID: 1549027132}
+  - {fileID: 1955491562}
+  - {fileID: 673110093}
+  - {fileID: 684441668}
+  - {fileID: 1209890737}
+  - {fileID: 1969314423}
+  - {fileID: 1289698947}
+  - {fileID: 1689729499}
+  - {fileID: 528933327}
+  groupCenterList:
+  - {fileID: 1836050174}
+  - {fileID: 82812470}
+  - {fileID: 1969317220}
+  - {fileID: 941478647}
+  - {fileID: 176725569}
+  - {fileID: 1909472523}
+  - {fileID: 696764838}
+  - {fileID: 1406373322}
+  - {fileID: 781607022}
+  - {fileID: 2085777269}
+  - {fileID: 1040542137}
+  - {fileID: 1790156969}
+  - {fileID: 463502382}
+  - {fileID: 1779128506}
+  - {fileID: 1267776944}
+  - {fileID: 841841554}
+  - {fileID: 966630857}
+  - {fileID: 1560064169}
+  - {fileID: 1901981955}
+  - {fileID: 1735927674}
+  - {fileID: 1460164004}
+  - {fileID: 308296175}
+  - {fileID: 1811069193}
+  - {fileID: 1393536639}
+  - {fileID: 1111905780}
+  - {fileID: 2080936093}
+  - {fileID: 346234691}
+  - {fileID: 1970389058}
+  - {fileID: 1976995438}
+  - {fileID: 521857371}
+  groupRightList:
+  - {fileID: 1892088549}
+  - {fileID: 307132337}
+  - {fileID: 501340822}
+  - {fileID: 607370564}
+  - {fileID: 825777461}
+  - {fileID: 605918226}
+  - {fileID: 940212693}
+  - {fileID: 1741662868}
+  - {fileID: 1470420594}
+  - {fileID: 1151623082}
+  - {fileID: 820140021}
+  - {fileID: 1753754201}
+  - {fileID: 600326960}
+  - {fileID: 1593504342}
+  - {fileID: 1640194932}
+  - {fileID: 816525064}
+  - {fileID: 1745753408}
+  - {fileID: 792456267}
+  - {fileID: 768812911}
+  - {fileID: 1784634589}
+  - {fileID: 1386981285}
+  - {fileID: 925034196}
+  - {fileID: 1753617343}
+  - {fileID: 827046324}
+  playerAList: []
+  playerBList: []
+  indexPiecesList: 010000000200000003000000040000000500000006000000
+  sortedPiecesList: 
+  targetAPosition:
+  - {fileID: 57489780}
+  - {fileID: 537130160}
+  - {fileID: 717354122}
+  - {fileID: 1532004111}
+  - {fileID: 1348472085}
+  - {fileID: 1646950404}
+  targetBPosition:
+  - {fileID: 2115654885}
+  - {fileID: 2016781139}
+  - {fileID: 1523410646}
+  - {fileID: 1519611749}
+  - {fileID: 983092792}
+  - {fileID: 893433120}
+--- !u!4 &1990299820
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990299818}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.8670819, y: 0.9102246, z: -7.8125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2005473277
 GameObject:
@@ -9134,11 +9335,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2005473277}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.33, y: -2, z: 0}
+  m_LocalPosition: {x: -7.78, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 284760155}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2005473279
 SpriteRenderer:
@@ -9296,11 +9497,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2016781139}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.62, y: 3.4899998, z: 0}
+  m_LocalPosition: {x: 7.9300003, y: 3.4848146, z: 9.824219}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 284760155}
-  m_RootOrder: 25
+  m_Father: {fileID: 899475260}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2016781141
 SpriteRenderer:
@@ -9309,7 +9510,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2016781139}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -9377,11 +9578,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2018728783}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.11, y: -1, z: 0}
+  m_LocalPosition: {x: -7.78, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 284760155}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2018728785
 SpriteRenderer:
@@ -9526,7 +9727,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (6)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9556,7 +9757,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (62)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9586,7 +9787,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (26)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9616,7 +9817,7 @@ GameObject:
   m_Layer: 0
   m_Name: BearPiece (4)
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9649,7 +9850,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2101130103
 Transform:
   m_ObjectHideFlags: 0
@@ -9739,7 +9940,7 @@ Transform:
   - {fileID: 1753617344}
   - {fileID: 827046325}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2115654885
 GameObject:
@@ -9766,11 +9967,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2115654885}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.65, y: 3.8499994, z: 0}
+  m_LocalPosition: {x: 7.959999, y: 3.8448143, z: 9.824219}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 284760155}
-  m_RootOrder: 28
+  m_Father: {fileID: 899475260}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2115654887
 SpriteRenderer:
@@ -9779,7 +9980,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2115654885}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
