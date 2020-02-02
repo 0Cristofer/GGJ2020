@@ -40,10 +40,8 @@ namespace GameController
                     yAxis
                     );
                 
-                if (joystickVector.magnitude > 0)
-                {
-                    _gameController.EnqueueEvent(new GameEvent(player, joystickVector));
-                }
+
+                _gameController.EnqueueEvent(new GameEvent(player, joystickVector));
             }
         }
 
