@@ -15,6 +15,7 @@ namespace Controller.Gameplay
 
         [SerializeField] private Animator _animation = null;
         [SerializeField] private OrdemDosLayers ordemlayers = null;
+        [SerializeField] private GameController.GameController _gameController;
 
         public void Init(Player player)
         {
@@ -98,6 +99,14 @@ namespace Controller.Gameplay
         public void OnItemAdded(Player player)
         {
             Debug.Log("On Item Added");
+        }
+
+        public void OnObjectiveUpdated(Player player)
+        {
+            if (player.ObjectiveReached())
+            {
+                _gameController.GameWon(player);
+            }
         }
 
         private void MovePlayer(Vector2 currentPosition)

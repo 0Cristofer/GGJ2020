@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Controller.Gameplay;
+using Domains;
 using UnityEngine;
 
 public class BearPiecesGenerator : MonoBehaviour
@@ -33,7 +35,11 @@ public class BearPiecesGenerator : MonoBehaviour
         DefinePositionPiecesRest();
 
         print("//--------------------------------------//");
-        _gameController.Init();
+
+        List<BearItemController> player1Objective = playerAList.Select(bearItem => bearItem.GetComponent<BearItemController>()).ToList();
+        List<BearItemController> player2Objective = playerBList.Select(bearItem => bearItem.GetComponent<BearItemController>()).ToList();
+
+        _gameController.Init(player1Objective, player2Objective);
     }
 
     private void DefinePlayerPieces()
