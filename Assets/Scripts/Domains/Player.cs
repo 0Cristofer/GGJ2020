@@ -5,8 +5,9 @@ namespace Domains
 {
     public class Player
     {
-        public Vector2 Position { get; private set; }
         public const float Velocity = 0.15f;
+        public Vector2 Position { get; private set; }
+        private bool _isIdle;
 
         private readonly World _world;
         private readonly List<BearItem> _bearItems;
@@ -20,6 +21,7 @@ namespace Domains
             _world = world;
             _bearItems = new List<BearItem>();
             _playerListeners = new List<IPlayerUpdatedListener>();
+            _isIdle = true;
             Position = initialPosition;
             CarpetPosition = carpetPosition;
         }
@@ -48,26 +50,39 @@ namespace Domains
 
         public void MoveUp()
         {
+            _isIdle = false;
             Position = new Vector2(Position.x, Position.y + 1);
             FireOnPlayerMovedUpEvent(this);
         }
         
         public void MoveDown()
         {
+            _isIdle = false;
             Position = new Vector2(Position.x, Position.y - 1);
             FireOnPlayerMovedDownEvent(this);
         }
         
         public void MoveRight()
         {
+            _isIdle = false;
             Position = new Vector2(Position.x + 1, Position.y);
             FireOnPlayerMovedRightEvent(this);
         }
         
         public void MoveLeft()
         {
+            _isIdle = false;
             Position = new Vector2(Position.x - 1, Position.y);
             FireOnPlayerMovedLeftEvent(this);
+        }
+
+        public void SetIdle()
+        {
+            if (_isIdle)
+                return;
+            
+            _isIdle = true;
+            FireOnPlayerIdleEvent(this);
         }
 
         private void FireOnPlayerMovedUpEvent(Player player)
@@ -101,6 +116,14 @@ namespace Domains
                 listener.OnPlayerMovedLeft(player);
             }
         }
+        
+        private void FireOnPlayerIdleEvent(Player player)
+        {
+            foreach (IPlayerUpdatedListener listener in _playerListeners)
+            {
+                listener.OnPlayerIdle(player);
+            }
+        }
 
         private void FireOnItemChangedEvent(Player player)
         {
@@ -130,6 +153,7 @@ namespace Domains
         void OnPlayerMovedDown(Player player);
         void OnPlayerMovedRight(Player player);
         void OnPlayerMovedLeft(Player player);
+        void OnPlayerIdle(Player player);
         void OnItemChanged(Player player);
         void OnItemAdded(Player player);
     }

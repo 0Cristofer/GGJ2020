@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Controller;
 using Controller.Gameplay;
 using Domains;
 using UnityEngine;
@@ -11,7 +9,7 @@ namespace GameController
 {
     public class GameController : MonoBehaviour
     {
-        private List<List<Vector2>> corners =
+        private readonly List<List<Vector2>> _corners =
         new List<List<Vector2>> {
             new List<Vector2> {
                 new Vector2(0, 0), new Vector2(0, 1), 
@@ -38,15 +36,13 @@ namespace GameController
 
         [SerializeField]
         private InputController _inputController = null;
+
         [SerializeField]
-        private GameObject _playerPrefab = null;
-        
+        private WorldController _worldController = null;
         [SerializeField]
-        private WorldController _worldController;
+        private List<BearItemController> _bearItemsControllers = null;
         [SerializeField]
-        private List<BearItemController> _bearItemsControllers;
-        [SerializeField]
-        private List<PlayerController> _playersControllers;
+        private List<PlayerController> _playersControllers = null;
 
 
         private void Init()
@@ -54,18 +50,20 @@ namespace GameController
             int playerQuantity = ApplicationController.Instance.GetNextGamePlayerQuantity();
             
             List<BearItem> bearItems = _bearItemsControllers.Select(bearItemController => bearItemController.GetDomain()).ToList();
-            World world = new World(bearItems, corners);
+            World world = new World(bearItems, _corners);
 
             _worldController.Init(world);
 
             List<Player> players = new List<Player>();
             List<PlayerController> toDestroyPlayerControllers = new List<PlayerController>();
+
+            List<CarpetPosition> carpetPositions = EnumUtil.GetValues<CarpetPosition>().ToList();
             int i;
             for (i = 0; i < playerQuantity; i++)
             {
-                Player newPlayer = new Player(world, new Vector2(), CarpetPosition.LeftDown);
-                _playersControllers[i].transform.position = new Vector3();
-                _playersControllers[i].name = _playerPrefab.name + i;
+                Player newPlayer = new Player(world, _corners[i][0], carpetPositions[i]);
+                _playersControllers[i].transform.position = new Vector3(_corners[i][0].x, _corners[i][0].y);
+                _playersControllers[i].name = "Player" + i;
                 _playersControllers[i].Init(newPlayer);
                 players.Add(newPlayer);
             }
@@ -76,7 +74,7 @@ namespace GameController
             foreach (PlayerController toDestroyPlayerController in toDestroyPlayerControllers)
             {
                 _playersControllers.Remove(toDestroyPlayerController);
-                Destroy(toDestroyPlayerController);
+                Destroy(toDestroyPlayerController.gameObject);
             }
             
             world.SetPlayers(players);

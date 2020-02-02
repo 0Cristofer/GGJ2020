@@ -26,8 +26,8 @@ public static class WorldUtil
         Vector2 newPos = pos + TranslationVector;
         newPos.x /= XFactor;
 
-        newPos.x = (float) Math.Floor(newPos.x);
-        newPos.y = (float) Math.Floor(newPos.y);
+        newPos.x = (int) Math.Floor(newPos.x);
+        newPos.y = (int) Math.Floor(newPos.y);
 
         return newPos;
     }

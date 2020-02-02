@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Controller;
+﻿using System.Collections.Generic;
 using Controller.Gameplay;
 using UnityEngine;
 
@@ -41,7 +39,6 @@ namespace GameController
                     yAxis
                     );
                 
-
                 _gameController.EnqueueEvent(new GameEvent(player, joystickVector));
             }
         }
