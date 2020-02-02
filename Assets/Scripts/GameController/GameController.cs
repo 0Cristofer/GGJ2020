@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Controller;
+using Domains;
 using UnityEngine;
 
 namespace GameController
@@ -28,7 +29,7 @@ namespace GameController
             }
         };
         
-        private const float TickTime = 0.1f;
+        private const float TickTime = 0.016f;
         private int _tickRate;
         private int _currentTick;
 
@@ -48,23 +49,15 @@ namespace GameController
             for (int i = 0; i < numPlayers; i++)
             {
                 GameObject newPlayer = Instantiate(_playerPrefab);
+                PlayerController newPlayerController = newPlayer.GetComponent<PlayerController>();
+
+                newPlayer.transform.position = new Vector3();
                 newPlayer.name = _playerPrefab.name + i;
-                _players.Add(newPlayer.GetComponent<PlayerController>());
+                newPlayerController.Init(new Player(null, new Vector2(), CarpetPosition.LeftDown));
+                _players.Add(newPlayerController);
             }
         
             StartTicking();
-        }
-
-        private void StartTicking()
-        {
-            _inputController.Init(_players);
-        
-            _tickRate = (int) (1 / TickTime);
-            _eventQueue = new Queue<GameEvent>();
-        
-            Debug.Log("Starting Game Controller at " + _tickRate + " ticks per second");
-
-            StartCoroutine(Tick());
         }
 
         public void EnqueueEvent(GameEvent inputEvent)
@@ -81,27 +74,45 @@ namespace GameController
                 while (_eventQueue.Count != 0) 
                 {
                     GameEvent gameEvent = _eventQueue.Dequeue();
-            
-                    switch (gameEvent.InputKey)
-                    {
-                        case InputKey.Fire:
-                            Debug.Log("Game received fire1");
-                            gameEvent.PlayerController.Fire1();
-                            break;
-                        case InputKey.Jump:
-                            Debug.Log("Game received jump");
-                            gameEvent.PlayerController.Jump();
-                            break;
-                        default:
-                            Debug.LogWarning("Unhandled Input Event :" + EnumUtil.GetEnumValueName(gameEvent.InputKey));
-                            break;
-                    }
+
+                    HandleEvent(gameEvent);
                 }
             
                 yield return new WaitForSeconds(TickTime);
             }
         }
+
+        private void HandleEvent(GameEvent gameEvent)
+        {
+            if (gameEvent.HasJoystickInput)
+            {
+                gameEvent.PlayerController.Move(gameEvent.JoystickInput.normalized);
+                return;
+            }
+                    
+            switch (gameEvent.InputKey)
+            {
+                case InputKey.ItemChange:
+                    gameEvent.PlayerController.ItemChange();
+                    break;
+                default:
+                    Debug.LogWarning("Unhandled Input Event :" + EnumUtil.GetEnumValueName(gameEvent.InputKey));
+                    break;
+            }
+        }
     
+        private void StartTicking()
+        {
+            _inputController.Init(_players);
+        
+            _tickRate = (int) (1 / TickTime);
+            _eventQueue = new Queue<GameEvent>();
+        
+            Debug.Log("Starting Game Controller at " + _tickRate + " ticks per second");
+
+            StartCoroutine(Tick());
+        }
+        
         private void Start()
         {
             Init(2);
@@ -112,11 +123,21 @@ namespace GameController
     {
         public PlayerController PlayerController { get; private set; }
         public InputKey InputKey { get; private set; }
-
+        public Vector2 JoystickInput { get; private set; }
+        public bool HasJoystickInput { get; private set; }
+            
         public GameEvent(PlayerController playerController, InputKey inputKey)
         {
             PlayerController = playerController;
             InputKey = inputKey;
+            HasJoystickInput = false;
+        }
+
+        public GameEvent(PlayerController playerController, Vector2 joystickInput)
+        {
+            PlayerController = playerController;
+            JoystickInput = joystickInput;
+            HasJoystickInput = true;
         }
     }
 }
