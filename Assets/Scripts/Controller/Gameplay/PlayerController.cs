@@ -2,7 +2,7 @@
 using Domains;
 using UnityEngine;
 
-namespace Controller
+namespace Controller.Gameplay
 {
     public class PlayerController : MonoBehaviour, IPlayerUpdatedListener
     {

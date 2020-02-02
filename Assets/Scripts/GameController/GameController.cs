@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Controller;
+using Controller.Gameplay;
 using Domains;
 using UnityEngine;
 
@@ -32,31 +34,53 @@ namespace GameController
         private const float TickTime = 0.016f;
         private int _tickRate;
         private int _currentTick;
-
         private Queue<GameEvent> _eventQueue;
-
-        private List<PlayerController> _players;
 
         [SerializeField]
         private InputController _inputController = null;
         [SerializeField]
         private GameObject _playerPrefab = null;
+        
+        [SerializeField]
+        private WorldController _worldController;
+        [SerializeField]
+        private List<BearItemController> _bearItemsControllers;
+        [SerializeField]
+        private List<PlayerController> _playersControllers;
 
-        private void Init(int numPlayers)
+
+        private void Init()
         {
-            _players = new List<PlayerController>();
-        
-            for (int i = 0; i < numPlayers; i++)
-            {
-                GameObject newPlayer = Instantiate(_playerPrefab);
-                PlayerController newPlayerController = newPlayer.GetComponent<PlayerController>();
+            int playerQuantity = ApplicationController.Instance.GetNextGamePlayerQuantity();
+            
+            List<BearItem> bearItems = _bearItemsControllers.Select(bearItemController => bearItemController.GetDomain()).ToList();
+            World world = new World(bearItems, corners);
 
-                newPlayer.transform.position = new Vector3();
-                newPlayer.name = _playerPrefab.name + i;
-                newPlayerController.Init(new Player(null, new Vector2(), CarpetPosition.LeftDown));
-                _players.Add(newPlayerController);
+            _worldController.Init(world);
+
+            List<Player> players = new List<Player>();
+            List<PlayerController> toDestroyPlayerControllers = new List<PlayerController>();
+            int i;
+            for (i = 0; i < playerQuantity; i++)
+            {
+                Player newPlayer = new Player(world, new Vector2(), CarpetPosition.LeftDown);
+                _playersControllers[i].transform.position = new Vector3();
+                _playersControllers[i].name = _playerPrefab.name + i;
+                _playersControllers[i].Init(newPlayer);
+                players.Add(newPlayer);
             }
-        
+            
+            for (; i < _playersControllers.Count; i++) 
+                toDestroyPlayerControllers.Add(_playersControllers[i]);
+
+            foreach (PlayerController toDestroyPlayerController in toDestroyPlayerControllers)
+            {
+                _playersControllers.Remove(toDestroyPlayerController);
+                Destroy(toDestroyPlayerController);
+            }
+            
+            world.SetPlayers(players);
+            
             StartTicking();
         }
 
@@ -103,7 +127,7 @@ namespace GameController
     
         private void StartTicking()
         {
-            _inputController.Init(_players);
+            _inputController.Init(_playersControllers);
         
             _tickRate = (int) (1 / TickTime);
             _eventQueue = new Queue<GameEvent>();
@@ -115,7 +139,7 @@ namespace GameController
         
         private void Start()
         {
-            Init(2);
+            Init();
         }
     }
 

@@ -10,9 +10,8 @@ namespace Domains
         private readonly List<BearItem> _bearItems;
         private readonly List<List<Vector2>> _worldCorners;
         
-        public World(List<Player> players, List<BearItem> bearItems, List<List<Vector2>> worldCorners)
+        public World(List<BearItem> bearItems, List<List<Vector2>> worldCorners)
         {
-            _players = players;
             _bearItems = bearItems;
             _worldCorners = worldCorners;
         }
@@ -50,6 +49,11 @@ namespace Domains
             }
 
             return false;
+        }
+
+        public void SetPlayers(List<Player> players)
+        {
+            _players = players;
         }
     }
 
