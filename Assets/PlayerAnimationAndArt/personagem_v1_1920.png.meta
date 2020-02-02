@@ -1,0 +1,1468 @@
+fileFormatVersion: 2
+guid: 6787e9c55350d14499d4d6ce5da306d5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2073272856350526373
+    second: personagem_v1_1920_0
+  - first:
+      213: -4886585058416308784
+    second: personagem_v1_1920_1
+  - first:
+      213: 5052527088248654299
+    second: personagem_v1_1920_2
+  - first:
+      213: 7780249744706202302
+    second: personagem_v1_1920_3
+  - first:
+      213: 93530858581011317
+    second: personagem_v1_1920_4
+  - first:
+      213: 4681906893576342552
+    second: personagem_v1_1920_5
+  - first:
+      213: -2347563475061712979
+    second: personagem_v1_1920_6
+  - first:
+      213: 1176018824285196597
+    second: personagem_v1_1920_7
+  - first:
+      213: 9096340440561333695
+    second: personagem_v1_1920_8
+  - first:
+      213: -3737206632471363644
+    second: personagem_v1_1920_9
+  - first:
+      213: 8248213542656115398
+    second: personagem_v1_1920_10
+  - first:
+      213: -4197561831581911888
+    second: personagem_v1_1920_11
+  - first:
+      213: -1402854677283830592
+    second: personagem_v1_1920_12
+  - first:
+      213: 2905967358501777851
+    second: personagem_v1_1920_13
+  - first:
+      213: 736893884935926872
+    second: personagem_v1_1920_14
+  - first:
+      213: -8391373775465753282
+    second: personagem_v1_1920_15
+  - first:
+      213: 680995696034914953
+    second: personagem_v1_1920_16
+  - first:
+      213: -4464571830052033528
+    second: personagem_v1_1920_17
+  - first:
+      213: -3943072368166354246
+    second: personagem_v1_1920_18
+  - first:
+      213: -7191785417984178912
+    second: personagem_v1_1920_19
+  - first:
+      213: 8408218007487503125
+    second: personagem_v1_1920_20
+  - first:
+      213: -3713677258223888385
+    second: personagem_v1_1920_21
+  - first:
+      213: -4582728504188036037
+    second: personagem_v1_1920_22
+  - first:
+      213: -3333719905526747099
+    second: personagem_v1_1920_23
+  - first:
+      213: -583030998704120589
+    second: personagem_v1_1920_24
+  - first:
+      213: 8160811856607326958
+    second: personagem_v1_1920_25
+  - first:
+      213: 6244131547127530696
+    second: personagem_v1_1920_26
+  - first:
+      213: 7013385778096396253
+    second: personagem_v1_1920_27
+  - first:
+      213: 5425897687134705829
+    second: personagem_v1_1920_28
+  - first:
+      213: 7961258536114619658
+    second: personagem_v1_1920_29
+  - first:
+      213: -5644065596042438636
+    second: personagem_v1_1920_30
+  - first:
+      213: 1831734044519280801
+    second: personagem_v1_1920_31
+  - first:
+      213: 5456397612128743224
+    second: personagem_v1_1920_32
+  - first:
+      213: 3442618807310658812
+    second: personagem_v1_1920_33
+  - first:
+      213: -1112879947125628211
+    second: personagem_v1_1920_34
+  - first:
+      213: -346906535352679542
+    second: personagem_v1_1920_35
+  - first:
+      213: -4134197424989664723
+    second: personagem_v1_1920_36
+  - first:
+      213: 965378584413518069
+    second: personagem_v1_1920_37
+  - first:
+      213: -3717900580530108325
+    second: personagem_v1_1920_38
+  - first:
+      213: 1159389869060617284
+    second: personagem_v1_1920_39
+  - first:
+      213: 4258415545195349600
+    second: personagem_v1_1920_40
+  - first:
+      213: -2611069888973759914
+    second: personagem_v1_1920_41
+  - first:
+      213: 5200410824416848218
+    second: personagem_v1_1920_42
+  - first:
+      213: 3311434062377365305
+    second: personagem_v1_1920_43
+  - first:
+      213: -7287084962053422088
+    second: personagem_v1_1920_44
+  - first:
+      213: -3845730795225740006
+    second: personagem_v1_1920_45
+  - first:
+      213: -4030646659428583495
+    second: personagem_v1_1920_46
+  - first:
+      213: -4813558782087692919
+    second: personagem_v1_1920_47
+  - first:
+      213: 2132357342130988366
+    second: personagem_v1_1920_48
+  - first:
+      213: 3290719906300156924
+    second: personagem_v1_1920_49
+  - first:
+      213: -9097644197765436853
+    second: personagem_v1_1920_50
+  - first:
+      213: -6890007101486707819
+    second: personagem_v1_1920_51
+  - first:
+      213: -7058430717891007304
+    second: personagem_v1_1920_52
+  - first:
+      213: -8316345276302910571
+    second: personagem_v1_1920_53
+  - first:
+      213: 816567297765835137
+    second: personagem_v1_1920_54
+  - first:
+      213: 5657531681702264608
+    second: personagem_v1_1920_55
+  - first:
+      213: -5734483248179682215
+    second: personagem_v1_1920_56
+  - first:
+      213: 5229124123721514194
+    second: personagem_v1_1920_57
+  - first:
+      213: -3971390373607896888
+    second: personagem_v1_1920_58
+  - first:
+      213: 6654359514176795172
+    second: personagem_v1_1920_59
+  - first:
+      213: -4179118276731114798
+    second: personagem_v1_1920_60
+  - first:
+      213: 5713196289576134808
+    second: personagem_v1_1920_61
+  - first:
+      213: -6994144811251875962
+    second: personagem_v1_1920_62
+  - first:
+      213: 7611135151428178282
+    second: personagem_v1_1920_63
+  - first:
+      213: 938471880130431841
+    second: personagem_v1_1920_64
+  - first:
+      213: -6201557243568887770
+    second: personagem_v1_1920_65
+  - first:
+      213: 6745979787738694850
+    second: personagem_v1_1920_66
+  - first:
+      213: -1641793453785780044
+    second: personagem_v1_1920_67
+  - first:
+      213: -7199153897026564581
+    second: personagem_v1_1920_68
+  - first:
+      213: -4475700287285513371
+    second: personagem_v1_1920_69
+  - first:
+      213: -755616517306850719
+    second: personagem_v1_1920_70
+  - first:
+      213: 1109451116379088772
+    second: personagem_v1_1920_71
+  - first:
+      213: 475462051636506925
+    second: personagem_v1_1920_72
+  - first:
+      213: -8580776295158279613
+    second: personagem_v1_1920_73
+  - first:
+      213: 8998699464673756339
+    second: personagem_v1_1920_74
+  - first:
+      213: 7884422101024817243
+    second: personagem_v1_1920_75
+  - first:
+      213: 4806371014945756504
+    second: personagem_v1_1920_76
+  - first:
+      213: -7680940620397389380
+    second: personagem_v1_1920_77
+  - first:
+      213: -3405171724237727554
+    second: personagem_v1_1920_78
+  - first:
+      213: -6090470298993214012
+    second: personagem_v1_1920_79
+  - first:
+      213: -7158207319518689244
+    second: personagem_v1_1920_80
+  - first:
+      213: 706371629442504543
+    second: personagem_v1_1920_81
+  - first:
+      213: 4419455596740302682
+    second: personagem_v1_1920_82
+  - first:
+      213: -6361668512413283171
+    second: personagem_v1_1920_83
+  - first:
+      213: -6270250963619502168
+    second: personagem_v1_1920_84
+  - first:
+      213: 5470261143899522827
+    second: personagem_v1_1920_85
+  - first:
+      213: -2836686779637580889
+    second: personagem_v1_1920_86
+  - first:
+      213: 3956557611315524876
+    second: personagem_v1_1920_87
+  - first:
+      213: -5770797505881923543
+    second: personagem_v1_1920_88
+  - first:
+      213: -9091892168066805793
+    second: personagem_v1_1920_89
+  - first:
+      213: -1933937896419540328
+    second: personagem_v1_1920_90
+  - first:
+      213: -3489351961195412480
+    second: personagem_v1_1920_91
+  - first:
+      213: -1747031329120561810
+    second: personagem_v1_1920_92
+  - first:
+      213: -7664219352752053654
+    second: personagem_v1_1920_93
+  - first:
+      213: 7500334889563384483
+    second: personagem_v1_1920_94
+  - first:
+      213: 4791335722345474852
+    second: personagem_v1_1920_95
+  - first:
+      213: 3885030577075981988
+    second: personagem_v1_1920_96
+  - first:
+      213: -8411680724831496105
+    second: personagem_v1_1920_97
+  - first:
+      213: 3535838871427530680
+    second: personagem_v1_1920_98
+  - first:
+      213: 2333522361957469191
+    second: personagem_v1_1920_99
+  - first:
+      213: -8737925140343334945
+    second: personagem_v1_1920_100
+  - first:
+      213: -180501952337765895
+    second: personagem_v1_1920_101
+  - first:
+      213: 7676544340252939874
+    second: personagem_v1_1920_102
+  - first:
+      213: -6176570926210366649
+    second: personagem_v1_1920_103
+  - first:
+      213: 6443696864289193834
+    second: personagem_v1_1920_104
+  - first:
+      213: -6767185996178309743
+    second: personagem_v1_1920_105
+  - first:
+      213: 6302430956268940696
+    second: personagem_v1_1920_106
+  - first:
+      213: -1481515463911856428
+    second: personagem_v1_1920_107
+  - first:
+      213: -4394061166705212599
+    second: personagem_v1_1920_108
+  - first:
+      213: 1717203551388529054
+    second: personagem_v1_1920_109
+  - first:
+      213: -5568915400941362703
+    second: personagem_v1_1920_110
+  - first:
+      213: 7913414927593212953
+    second: personagem_v1_1920_111
+  - first:
+      213: 8730358510052561143
+    second: personagem_v1_1920_112
+  - first:
+      213: -8293157098954649091
+    second: personagem_v1_1920_113
+  - first:
+      213: 7109696696473729006
+    second: personagem_v1_1920_114
+  - first:
+      213: -2096323480109819048
+    second: personagem_v1_1920_115
+  - first:
+      213: -128853128849549250
+    second: personagem_v1_1920_116
+  - first:
+      213: -233026859443865163
+    second: personagem_v1_1920_117
+  - first:
+      213: -4535376254906958559
+    second: personagem_v1_1920_118
+  - first:
+      213: -2068977841731502797
+    second: personagem_v1_1920_119
+  - first:
+      213: -3600558649924049731
+    second: personagem_v1_1920_120
+  - first:
+      213: 7090938243858372904
+    second: personagem_v1_1920_121
+  - first:
+      213: -1276725879236417764
+    second: personagem_v1_1920_122
+  - first:
+      213: -3698067224617284787
+    second: personagem_v1_1920_123
+  - first:
+      213: 3610402599387953385
+    second: personagem_v1_1920_124
+  - first:
+      213: -8598007024748483726
+    second: personagem_v1_1920_125
+  - first:
+      213: -5297338635488108337
+    second: personagem_v1_1920_126
+  - first:
+      213: -7336431419483078254
+    second: personagem_v1_1920_127
+  - first:
+      213: -2573694503378184177
+    second: personagem_v1_1920_128
+  - first:
+      213: -3213581649792458554
+    second: personagem_v1_1920_129
+  - first:
+      213: -4926470194721295809
+    second: personagem_v1_1920_130
+  - first:
+      213: 2300462420307980550
+    second: personagem_v1_1920_131
+  - first:
+      213: 6943752452821073085
+    second: personagem_v1_1920_132
+  - first:
+      213: 2296775226721797134
+    second: personagem_v1_1920_133
+  - first:
+      213: -2573523847843497027
+    second: personagem_v1_1920_134
+  - first:
+      213: 3606207613853520234
+    second: personagem_v1_1920_135
+  - first:
+      213: 183377957974052826
+    second: personagem_v1_1920_136
+  - first:
+      213: -1775453331408071026
+    second: personagem_v1_1920_137
+  - first:
+      213: 3734061229856837904
+    second: personagem_v1_1920_138
+  - first:
+      213: 1983331557490290180
+    second: personagem_v1_1920_139
+  - first:
+      213: 9076215257288471210
+    second: personagem_v1_1920_140
+  - first:
+      213: 7816057541190898529
+    second: personagem_v1_1920_141
+  - first:
+      213: -7767859592711992621
+    second: personagem_v1_1920_142
+  - first:
+      213: -803141612510802394
+    second: personagem_v1_1920_143
+  - first:
+      213: 1789740789510626923
+    second: personagem_v1_1920_144
+  - first:
+      213: -229509279461876840
+    second: personagem_v1_1920_145
+  - first:
+      213: 8852098142207538912
+    second: personagem_v1_1920_146
+  - first:
+      213: 2634946124317746367
+    second: personagem_v1_1920_147
+  - first:
+      213: 3730717476948835319
+    second: personagem_v1_1920_148
+  - first:
+      213: -5694265552029312765
+    second: personagem_v1_1920_149
+  - first:
+      213: 3221460286377310925
+    second: personagem_v1_1920_150
+  - first:
+      213: 1071591045048038025
+    second: personagem_v1_1920_151
+  - first:
+      213: 5299460035963012750
+    second: personagem_v1_1920_152
+  - first:
+      213: -4294339644690456786
+    second: personagem_v1_1920_153
+  - first:
+      213: -2750889538308453868
+    second: personagem_v1_1920_154
+  - first:
+      213: -7519763189757603133
+    second: personagem_v1_1920_155
+  - first:
+      213: -3872518488461121994
+    second: personagem_v1_1920_156
+  - first:
+      213: 9075442248100607308
+    second: personagem_v1_1920_157
+  - first:
+      213: -233985179068785531
+    second: personagem_v1_1920_158
+  - first:
+      213: 1904381430466198842
+    second: personagem_v1_1920_159
+  - first:
+      213: 4413679386771011793
+    second: personagem_v1_1920_160
+  - first:
+      213: -4116020409075204023
+    second: personagem_v1_1920_161
+  - first:
+      213: -7657856883631250581
+    second: personagem_v1_1920_162
+  - first:
+      213: 7874644737534116608
+    second: personagem_v1_1920_163
+  - first:
+      213: -1682344357922743171
+    second: personagem_v1_1920_164
+  - first:
+      213: 7518356188299535369
+    second: personagem_v1_1920_165
+  - first:
+      213: -7335776667084066809
+    second: personagem_v1_1920_166
+  - first:
+      213: -6139565368403569246
+    second: personagem_v1_1920_167
+  - first:
+      213: 1711514659052723359
+    second: personagem_v1_1920_168
+  - first:
+      213: 3096891255673004283
+    second: personagem_v1_1920_169
+  - first:
+      213: 5296656666764892097
+    second: personagem_v1_1920_170
+  - first:
+      213: -2438944758096510279
+    second: personagem_v1_1920_171
+  - first:
+      213: 6269299157066539795
+    second: personagem_v1_1920_172
+  - first:
+      213: -2204739449682269899
+    second: personagem_v1_1920_173
+  - first:
+      213: 9171431652537371235
+    second: personagem_v1_1920_174
+  - first:
+      213: 3334305812040968239
+    second: personagem_v1_1920_175
+  - first:
+      213: 2483510139519440559
+    second: personagem_v1_1920_176
+  - first:
+      213: 4643303188343180224
+    second: personagem_v1_1920_177
+  - first:
+      213: -4760338958642680202
+    second: personagem_v1_1920_178
+  - first:
+      213: -1911120720267636857
+    second: personagem_v1_1920_179
+  - first:
+      213: -1622164874621900948
+    second: personagem_v1_1920_180
+  - first:
+      213: 3203180073263297281
+    second: personagem_v1_1920_181
+  - first:
+      213: -1865188599449967515
+    second: personagem_v1_1920_182
+  - first:
+      213: -1704619120194537665
+    second: personagem_v1_1920_183
+  - first:
+      213: -8359752760726592974
+    second: personagem_v1_1920_184
+  - first:
+      213: -9049270365673708361
+    second: personagem_v1_1920_185
+  - first:
+      213: 6033747016424379448
+    second: personagem_v1_1920_186
+  - first:
+      213: -8909364953721859483
+    second: personagem_v1_1920_187
+  - first:
+      213: -6233848952455648229
+    second: personagem_v1_1920_188
+  - first:
+      213: -7007481132093754084
+    second: personagem_v1_1920_189
+  - first:
+      213: -4266253868447183911
+    second: personagem_v1_1920_190
+  - first:
+      213: -2049399518780416692
+    second: personagem_v1_1920_191
+  - first:
+      213: -26447932248895222
+    second: personagem_v1_1920_192
+  - first:
+      213: 4335829487207588954
+    second: personagem_v1_1920_193
+  - first:
+      213: 614148693724330703
+    second: personagem_v1_1920_194
+  - first:
+      213: 352632003694190122
+    second: personagem_v1_1920_195
+  - first:
+      213: 4934347896373880780
+    second: personagem_v1_1920_196
+  - first:
+      213: -1539838145704181365
+    second: personagem_v1_1920_197
+  - first:
+      213: 6357831217677540844
+    second: personagem_v1_1920_198
+  - first:
+      213: -5919932366321368913
+    second: personagem_v1_1920_199
+  - first:
+      213: -6533446756511183705
+    second: personagem_v1_1920_200
+  - first:
+      213: -6985936413473923887
+    second: personagem_v1_1920_201
+  - first:
+      213: -2015326131975651594
+    second: personagem_v1_1920_202
+  - first:
+      213: -3834964851682332040
+    second: personagem_v1_1920_203
+  - first:
+      213: -1282847962199627497
+    second: personagem_v1_1920_204
+  - first:
+      213: -500757552300413821
+    second: personagem_v1_1920_205
+  - first:
+      213: -9015408503607815269
+    second: personagem_v1_1920_206
+  - first:
+      213: -6953185573269980957
+    second: personagem_v1_1920_207
+  - first:
+      213: 4765815265776659939
+    second: personagem_v1_1920_208
+  - first:
+      213: -6891487249294213882
+    second: personagem_v1_1920_209
+  - first:
+      213: -6778815263101670087
+    second: personagem_v1_1920_210
+  - first:
+      213: -7801984902811277489
+    second: personagem_v1_1920_211
+  - first:
+      213: 3754383689829270798
+    second: personagem_v1_1920_212
+  - first:
+      213: 4410947039379012042
+    second: personagem_v1_1920_213
+  - first:
+      213: 3069147831466262598
+    second: personagem_v1_1920_214
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: personagem_v1_1920_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 860
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab8b3d9daeb5cc10800000000000000
+      internalID: 2073272856350526373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 860
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd4d5497cc5f2cb0800000000000000
+      internalID: -4886585058416308784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_2
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 860
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd989190e9e2e1640800000000000000
+      internalID: 5052527088248654299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_3
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 860
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eba6909dbeff8fb60800000000000000
+      internalID: 7780249744706202302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_4
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 860
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b224102d94c4100800000000000000
+      internalID: 93530858581011317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_5
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 860
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c021f838979f040800000000000000
+      internalID: 4681906893576342552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_6
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 860
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7d3451577cb6fd0800000000000000
+      internalID: -2347563475061712979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_7
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 860
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53111bec3ee025010800000000000000
+      internalID: 1176018824285196597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 644
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb5bdabaf61bc3e70800000000000000
+      internalID: 9096340440561333695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_9
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 644
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf7f4b4e56c22cc0800000000000000
+      internalID: -3737206632471363644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_10
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 644
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c28591248a877270800000000000000
+      internalID: 8248213542656115398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_11
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 644
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b472d9f0c34fb5c0800000000000000
+      internalID: -4197561831581911888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_12
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 644
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c480098a1f088ce0800000000000000
+      internalID: -1402854677283830592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_13
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 644
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb1f0648ae1145820800000000000000
+      internalID: 2905967358501777851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_14
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 644
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85473c88519f93a00800000000000000
+      internalID: 736893884935926872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 644
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35d5d7b20adb8b80800000000000000
+      internalID: -8391373775465753282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 428
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9822bbb3af1637900800000000000000
+      internalID: 680995696034914953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_17
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 428
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c688b2397aa02c0800000000000000
+      internalID: -4464571830052033528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_18
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 428
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab249cb82946749c0800000000000000
+      internalID: -3943072368166354246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_19
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 428
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 025083c1445a13c90800000000000000
+      internalID: -7191785417984178912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_20
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 428
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51bd55aaabdffa470800000000000000
+      internalID: 8408218007487503125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_21
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 428
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff75e15a53e567cc0800000000000000
+      internalID: -3713677258223888385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_22
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 428
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c90dda4b0e660c0800000000000000
+      internalID: -4582728504188036037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_23
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 428
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 520fd62a86f3cb1d0800000000000000
+      internalID: -3333719905526747099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 212
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc133d4568a8e7f0800000000000000
+      internalID: -583030998704120589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_25
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 212
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee230ef4527014170800000000000000
+      internalID: 8160811856607326958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_26
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 212
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4c85d2f8c97a650800000000000000
+      internalID: 6244131547127530696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_27
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 212
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd75638e43d845160800000000000000
+      internalID: 7013385778096396253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_28
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 212
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a81745e239ac4b40800000000000000
+      internalID: 5425897687134705829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_29
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 212
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05882245721c7e60800000000000000
+      internalID: 7961258536114619658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_30
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 212
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41813e27e304ca1b0800000000000000
+      internalID: -5644065596042438636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem_v1_1920_31
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 212
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a0bf869860ab6910800000000000000
+      internalID: 1831734044519280801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
