@@ -10,7 +10,7 @@ public class BearPiecesGenerator : MonoBehaviour
 
     [SerializeField] private List<GameObject> playerAList, playerBList;
 
-    [SerializeField] private List<GameObject> playerATargetAList, playerATargetBList;
+    [SerializeField] private List<GameObject> playerTargetAList, playerTargetBList;
 
     [SerializeField] private List<int> indexPiecesList = new List<int> { 1, 2, 3, 4, 5, 6 };
     [SerializeField] private List<int> sortedPiecesList;
@@ -206,18 +206,29 @@ public class BearPiecesGenerator : MonoBehaviour
     }
 
     private void DefineTargetUi() 
-    { 
-        foreach(GameObject piece in playerATargetAList) 
+    {
+        print(playerTargetAList.Count() + " " + playerAList.Count());
+
+        foreach(GameObject piece in playerTargetAList) 
         {
             foreach (GameObject piecePlayer in playerAList)
             {
-                if(piecePlayer.name== piece.name)
+                if(piece.name.Contains(piecePlayer.name))
                 {
                     piece.SetActive(true);
-                    print("Igual");
                 }
             }
+        }
 
+        foreach (GameObject piece in playerTargetBList)
+        {
+            foreach (GameObject piecePlayer in playerBList)
+            {
+                if (piece.name.Contains(piecePlayer.name))
+                {
+                    piece.SetActive(true);
+                }
+            }
         }
     }
 }
