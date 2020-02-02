@@ -11,13 +11,15 @@ namespace Domains
         private readonly World _world;
         private readonly List<BearItem> _bearItems;
         private BearItem _currentItem;
+        private List<BearItem> _objective;
         public CarpetPosition CarpetPosition { get; private set; }
 
         private readonly List<IPlayerUpdatedListener> _playerListeners;
 
-        public Player(World world, Vector2 initialPosition, CarpetPosition carpetPosition)
+        public Player(World world, Vector2 initialPosition, CarpetPosition carpetPosition, List<BearItem> objective)
         {
             _world = world;
+            _objective = objective;
             _bearItems = new List<BearItem>();
             _playerListeners = new List<IPlayerUpdatedListener>();
             Position = initialPosition;
@@ -50,6 +52,14 @@ namespace Domains
         {
             _bearItems.Add(item);
             FireOnItemAddedEvent(this);
+            
+            if (_objective.Remove(item))
+                FireOnObjectiveUpdated(this);
+        }
+
+        public bool ObjectiveReached()
+        {
+            return _objective.Count == 0;
         }
 
         public void MoveUp()
@@ -131,7 +141,15 @@ namespace Domains
                 listener.OnItemAdded(player);
             }
         }
-        
+
+        private void FireOnObjectiveUpdated(Player player)
+        {
+            foreach (IPlayerUpdatedListener listener in _playerListeners)
+            {
+                listener.OnObjectiveUpdated(player);
+            }
+        }
+
         public void AddListener(IPlayerUpdatedListener listener)
         {
             _playerListeners.Add(listener);
@@ -147,5 +165,6 @@ namespace Domains
         void OnItemGrabbed(Player player);
         void OnItemDropped(Player player);
         void OnItemAdded(Player player);
+        void OnObjectiveUpdated(Player player);
     }
 }

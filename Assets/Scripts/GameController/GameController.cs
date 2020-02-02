@@ -28,7 +28,8 @@ namespace GameController
                 new Vector2(0, 8), new Vector2(1, 8)
             }
         };
-        
+
+        private bool _running;
         private const float TickTime = 0.016f;
         private int _tickRate;
         private int _currentTick;
@@ -45,7 +46,7 @@ namespace GameController
         private List<PlayerController> _playersControllers = null;
 
 
-        public void Init()
+        public void Init(List<BearItemController> player1Objective, List<BearItemController> player2Objective)
         {
             int playerQuantity = ApplicationController.Instance.GetNextGamePlayerQuantity();
 
@@ -55,7 +56,12 @@ namespace GameController
                 bearItemController.Init();
                 bearItems.Add(bearItemController.GetDomain());
             }
-            
+
+
+            List<BearItem> player1BearItems = player1Objective.Select(bearItemController => bearItemController.GetDomain()).ToList();
+            List<BearItem> player2BearItems = player2Objective.Select(bearItemController => bearItemController.GetDomain()).ToList();
+            List<List<BearItem>> playerObjectives = new List<List<BearItem>> {player1BearItems, player2BearItems};
+
             World world = new World(bearItems, _corners);
             
             List<Player> players = new List<Player>();
@@ -65,7 +71,7 @@ namespace GameController
             int i;
             for (i = 0; i < playerQuantity; i++)
             {
-                Player newPlayer = new Player(world, _corners[i][0], carpetPositions[i]);
+                Player newPlayer = new Player(world, _corners[i][0], carpetPositions[i], playerObjectives[i]);
                 _playersControllers[i].transform.position = WorldUtil.ToWorldPos(_corners[i][0]);
                 _playersControllers[i].name = "Player" + i;
                 _playersControllers[i].Init(newPlayer);
@@ -90,7 +96,14 @@ namespace GameController
         public void EndGame()
         {
             Debug.Log("Ending Game");
+            _running = false;
             _worldController.EndGame();
+        }
+
+        public void GameWon(Player player)
+        {
+            _running = false;
+            Debug.Log("Game won");
         }
 
         public void EnqueueEvent(GameEvent inputEvent)
@@ -143,6 +156,7 @@ namespace GameController
         
             Debug.Log("Starting Game Controller at " + _tickRate + " ticks per second");
 
+            _running = true;
             StartCoroutine(Tick());
         }
     }
