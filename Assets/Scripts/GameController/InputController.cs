@@ -10,7 +10,7 @@ namespace GameController
         private List<PlayerController> _players = null;
     
         [SerializeField] 
-        private global::GameController.GameController _gameController = null;
+        private GameController _gameController = null;
 
         public void Init(List<PlayerController> players)
         {
@@ -21,16 +21,28 @@ namespace GameController
         {
             if (_players == null)
                 return;
-        
+
             foreach (PlayerController player in _players)
             {
                 foreach (InputKey inputKey in EnumUtil.GetValues<InputKey>())
                 {
                     if (Input.GetButtonDown(GetKeyCode(inputKey) + player.gameObject.name))
                     {
-                        Debug.Log("Got input + " + GetKeyCode(inputKey) + ", from " + player.gameObject.name);
                         _gameController.EnqueueEvent(new GameEvent(player, inputKey));
                     }
+                }
+
+                float xAxis = Input.GetAxisRaw(GetAxisCode(InputAxis.Horizontal) + player.gameObject.name);
+                float yAxis = Input.GetAxisRaw(GetAxisCode(InputAxis.Vertical) + player.gameObject.name) * -1;
+                
+                Vector2 joystickVector = new Vector2(
+                    xAxis,
+                    yAxis
+                    );
+                
+                if (joystickVector.magnitude > 0)
+                {
+                    _gameController.EnqueueEvent(new GameEvent(player, joystickVector));
                 }
             }
         }
@@ -39,10 +51,20 @@ namespace GameController
         {
             return EnumUtil.GetEnumValueName(key);
         }
+        
+        private string GetAxisCode(InputAxis key)
+        {
+            return EnumUtil.GetEnumValueName(key);
+        }
     }
 
     public enum InputKey
     {
-        Fire, Jump
+        ItemChange
+    }
+
+    public enum InputAxis
+    {
+        Horizontal, Vertical   
     }
 }
