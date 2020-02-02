@@ -10,6 +10,10 @@ public class Timer : MonoBehaviour
     float MiliSeconds;
 
     [SerializeField]
+    private float timerToStart;
+    private bool Started = false;
+
+    [SerializeField]
     private float timerToEnd;
 
     [SerializeField]
@@ -26,7 +30,16 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timerToEnd >= 0)
+        if(!Started)
+        {
+            timerToStart -= Time.deltaTime;
+            if (timerToStart <= 0)
+            {
+                Started = true;
+            }
+        }
+
+        if (timerToEnd >= 0 && Started)
         { 
         timerToEnd -= Time.deltaTime;
         Seconds = timerToEnd % 60;
