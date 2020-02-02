@@ -23,12 +23,17 @@ public class OrdemDosLayers : MonoBehaviour
 
     }
 
-    private void Update()
+    //private void Update()
+    //{
+    //    if (Input.GetKeyDown("w"))
+    //    {
+    //        LayerManagerScript.CalculatorOfLayer(MyScript, MyPosition.position.y);
+    //    }
+    //}
+
+    public void BeginLayerChange()
     {
-        if (Input.GetKeyDown("w"))
-        {
-            LayerManagerScript.CalculatorOfLayer(MyScript, MyPosition.position.y);
-        }
+        LayerManagerScript.CalculatorOfLayer(MyScript, MyPosition.position.y);
     }
 
     public void ChangeThisLayer(float y)

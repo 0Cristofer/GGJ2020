@@ -5,7 +5,7 @@ namespace Domains
 {
     public class Player
     {
-        public const float Velocity = 0.02f;
+        public const float Velocity = 0.035f;
         public Vector2 Position { get; private set; }
 
         private readonly World _world;

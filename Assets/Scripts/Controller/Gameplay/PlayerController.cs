@@ -14,6 +14,7 @@ namespace Controller.Gameplay
         private Player _player;
 
         [SerializeField] private Animator _animation = null;
+        [SerializeField] private OrdemDosLayers ordemlayers = null;
 
         public void Init(Player player)
         {
@@ -24,7 +25,7 @@ namespace Controller.Gameplay
         public void Move(Vector2 direction)
         {
             Transform playerTransform = gameObject.transform;
-
+            ordemlayers.BeginLayerChange();
             direction *= Player.Velocity;
 
             Vector3 currentPosition = playerTransform.position;
