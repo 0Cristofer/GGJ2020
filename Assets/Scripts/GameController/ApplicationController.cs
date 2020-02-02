@@ -29,7 +29,7 @@ namespace GameController
 
         public void LoadNextScene()
         {
-            SceneManager.LoadScene("GamePlay");
+            SceneManager.LoadScene("Arena01");
         }
     }
 }
