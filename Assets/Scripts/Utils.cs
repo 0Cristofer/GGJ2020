@@ -31,4 +31,12 @@ public static class WorldUtil
 
         return newPos;
     }
+
+    public static Vector2 ToWorldPos(Vector2 pos)
+    {
+        pos.x *= XFactor;
+        Vector2 newPos = pos - TranslationVector;
+
+        return newPos;
+    }
 }

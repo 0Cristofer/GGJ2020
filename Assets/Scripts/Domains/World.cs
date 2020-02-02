@@ -95,8 +95,8 @@ namespace Domains
 
     public enum CarpetPosition
     {
-        LeftDown, RightDown,
-        LeftUp, RightUp
+        LeftDown, RightUp, 
+        RightDown, LeftUp
     }
 
     public interface IWorldListener
