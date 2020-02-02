@@ -31,9 +31,8 @@ namespace Controller.Gameplay
             Vector3 newPos = currentPosition + new Vector3(direction.x, direction.y, 0);
 
             playerTransform.position = newPos;
-
-            Vector2 newGridPos = WorldUtil.ToGridPos(currentPosition);
-            Vector2 deltaPos = newGridPos - _player.Position;
+            
+            MovePlayer(currentPosition);
 
             AnimationDirection animDirection = AnimationDirection.None;
             if (direction.x > 0)
@@ -51,9 +50,60 @@ namespace Controller.Gameplay
             else
                 UpdateAnimationSpeed(1);
             
-            if (animDirection != AnimationDirection.None)
-                UpdateAnimationDirection(animDirection);
+            UpdateAnimationDirection(animDirection);
+        }
 
+        public void ChangeItem()
+        {
+            Debug.Log("Change Item");
+            _player.ChangeItem();
+        }
+
+        public Player GetDomain()
+        {
+            return _player;
+        }
+        
+        public void OnPlayerMovedUp(Player player)
+        {
+            Debug.Log("UP, new pos: " + player.Position);
+        }
+
+        public void OnPlayerMovedDown(Player player)
+        {
+            Debug.Log("Down, new pos: " + player.Position);
+        }
+
+        public void OnPlayerMovedRight(Player player)
+        {
+            Debug.Log("Right, new pos: " + player.Position);
+        }
+
+        public void OnPlayerMovedLeft(Player player)
+        {
+            Debug.Log("Left, new pos: " + player.Position);
+        }
+
+        public void OnItemGrabbed(Player player)
+        {
+            Debug.Log("Item grabbed!");
+        }
+
+        public void OnItemDropped(Player player)
+        {
+            Debug.Log("Item Dropped!");
+        }
+
+        public void OnItemAdded(Player player)
+        {
+            Debug.Log("On Item Added");
+        }
+
+        private void MovePlayer(Vector2 currentPosition)
+        {
+            Vector2 newGridPos = WorldUtil.ToGridPos(currentPosition);
+            Vector2 deltaPos = newGridPos - _player.Position;
+            
             if (deltaPos.x > 0)
                 _player.MoveRight();
             if (deltaPos.x < 0)
@@ -62,41 +112,6 @@ namespace Controller.Gameplay
                 _player.MoveUp();
             if (deltaPos.y < 0)
                 _player.MoveDown();
-        }
-
-        public void ChangeItem()
-        {
-            _player.ChangeItem();
-        }
-
-        public void OnPlayerMovedUp(Player player)
-        {
-            Debug.Log("UP");
-        }
-
-        public void OnPlayerMovedDown(Player player)
-        {
-            Debug.Log("Down");
-        }
-
-        public void OnPlayerMovedRight(Player player)
-        {
-            Debug.Log("Right");
-        }
-
-        public void OnPlayerMovedLeft(Player player)
-        {
-            Debug.Log("Left");
-        }
-
-        public void OnItemChanged(Player player)
-        {
-            Debug.Log("On Item Changed");
-        }
-
-        public void OnItemAdded(Player player)
-        {
-            Debug.Log("On Item Added");
         }
 
         private void UpdateAnimationDirection(AnimationDirection direction)
@@ -114,6 +129,8 @@ namespace Controller.Gameplay
                     break;
                 case AnimationDirection.Left:
                     UpdateAnimation(-1, 0);
+                    break;
+                case AnimationDirection.None:
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(direction), direction, null);

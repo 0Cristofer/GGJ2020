@@ -16,16 +16,16 @@ namespace GameController
                 new Vector2(1, 0), new Vector2(1, 1)
             },
             new List<Vector2> {
-                new Vector2(0, 0), new Vector2(0, 1), 
-                new Vector2(1, 0), new Vector2(1, 1)
+                new Vector2(13, 0), new Vector2(14, 0), 
+                new Vector2(13, 1), new Vector2(14, 1)
             },
             new List<Vector2> {
-                new Vector2(0, 0), new Vector2(0, 1), 
-                new Vector2(1, 0), new Vector2(1, 1)
+                new Vector2(0, 7), new Vector2(1, 7), 
+                new Vector2(0, 8), new Vector2(1, 8)
             },
             new List<Vector2> {
-                new Vector2(0, 0), new Vector2(0, 1), 
-                new Vector2(1, 0), new Vector2(1, 1)
+                new Vector2(13, 7), new Vector2(14, 7), 
+                new Vector2(13, 8), new Vector2(14, 18)
             }
         };
         
@@ -51,9 +51,7 @@ namespace GameController
             
             List<BearItem> bearItems = _bearItemsControllers.Select(bearItemController => bearItemController.GetDomain()).ToList();
             World world = new World(bearItems, _corners);
-
-            _worldController.Init(world);
-
+            
             List<Player> players = new List<Player>();
             List<PlayerController> toDestroyPlayerControllers = new List<PlayerController>();
 
@@ -77,6 +75,7 @@ namespace GameController
                 Destroy(toDestroyPlayerController.gameObject);
             }
             
+            _worldController.Init(world, _playersControllers, _bearItemsControllers);
             world.SetPlayers(players);
             
             StartTicking();

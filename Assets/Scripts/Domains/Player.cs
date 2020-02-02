@@ -5,7 +5,7 @@ namespace Domains
 {
     public class Player
     {
-        public const float Velocity = 0.03f;
+        public const float Velocity = 0.02f;
         public Vector2 Position { get; private set; }
 
         private readonly World _world;
@@ -26,22 +26,24 @@ namespace Domains
 
         public void ChangeItem()
         {
+            bool itemGrabbed, itemDropped = false;
             BearItem newItem = _world.PickItem(this);
 
-            if (_currentItem == null)
+            itemGrabbed = newItem != null;
+
+            if (_currentItem != null)
             {
-                _currentItem = newItem;
-                
-                if (newItem != null)
-                    FireOnItemChangedEvent(this);
-                
-                return;
+                itemDropped = true;
+                _world.DropItem(this, _currentItem);
             }
-            
-            _world.DropItem(this, _currentItem);
+
             _currentItem = newItem;
+
+            if (itemDropped)
+                FireOnItemDropped(this);
             
-            FireOnItemChangedEvent(this);
+            if (itemGrabbed)
+                FireOnItemGrabbed(this);
         }
 
         public void AddItem(BearItem item)
@@ -74,6 +76,22 @@ namespace Domains
             FireOnPlayerMovedLeftEvent(this);
         }
 
+        private void FireOnItemGrabbed(Player player)
+        {
+            foreach (IPlayerUpdatedListener listener in _playerListeners)
+            {
+                listener.OnItemGrabbed(player);
+            }
+        }
+
+        private void FireOnItemDropped(Player player)
+        {
+            foreach (IPlayerUpdatedListener listener in _playerListeners)
+            {
+                listener.OnItemDropped(player);
+            }
+        }
+        
         private void FireOnPlayerMovedUpEvent(Player player)
         {
             foreach (IPlayerUpdatedListener listener in _playerListeners)
@@ -106,14 +124,6 @@ namespace Domains
             }
         }
 
-        private void FireOnItemChangedEvent(Player player)
-        {
-            foreach (IPlayerUpdatedListener listener in _playerListeners)
-            {
-                listener.OnItemChanged(player);
-            }
-        }
-
         private void FireOnItemAddedEvent(Player player)
         {
             foreach (IPlayerUpdatedListener listener in _playerListeners)
@@ -134,7 +144,8 @@ namespace Domains
         void OnPlayerMovedDown(Player player);
         void OnPlayerMovedRight(Player player);
         void OnPlayerMovedLeft(Player player);
-        void OnItemChanged(Player player);
+        void OnItemGrabbed(Player player);
+        void OnItemDropped(Player player);
         void OnItemAdded(Player player);
     }
 }

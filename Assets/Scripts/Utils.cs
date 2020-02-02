@@ -18,7 +18,7 @@ public static class EnumUtil
 
 public static class WorldUtil
 {
-    private static readonly Vector2 TranslationVector = new Vector2(7f, 4f);
+    private static readonly Vector2 TranslationVector = new Vector2(8f, 3f);
     private const float XFactor = 1.111f;
 
     public static Vector2 ToGridPos(Vector2 pos)
@@ -26,8 +26,8 @@ public static class WorldUtil
         Vector2 newPos = pos + TranslationVector;
         newPos.x /= XFactor;
 
-        newPos.x = (int) Math.Floor(newPos.x);
-        newPos.y = (int) Math.Floor(newPos.y);
+        newPos.x = (int) Math.Round(newPos.x);
+        newPos.y = (int) Math.Round(newPos.y);
 
         return newPos;
     }
