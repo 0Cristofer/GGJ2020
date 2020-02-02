@@ -7,6 +7,8 @@ namespace Controller.Gameplay
     public class PlayerController : MonoBehaviour, IPlayerUpdatedListener
     {
         private Player _player;
+        [SerializeField]
+        private Animator Animacao;
 
         public void Init(Player player)
         {
@@ -28,25 +30,48 @@ namespace Controller.Gameplay
             Vector2 newGridPos = WorldUtil.ToGridPos(currentPosition);
             Vector2 deltaPos = newGridPos - _player.Position;
 
-            if (deltaPos.x > 0)
-            {
-                _player.MoveRight();
-            }
 
-            if (deltaPos.x < 0)
-            {
-                _player.MoveLeft();
-            }
+            Debug.Log("deltaPos.x : " + deltaPos.x);
 
-            if (deltaPos.y > 0)
-            {
-                _player.MoveUp();
-            }
+            //Debug.Log("deltaPos.y : " + deltaPos.y);
 
-            if (deltaPos.y < 0)
+            //if (deltaPos.x > 0)
+            //{
+            //    _player.MoveRight();
+            //}
+
+            //if (deltaPos.x < 0)
+            //{
+            //    _player.MoveLeft();
+            //}
+
+            //if (deltaPos.y > 0)
+            //{
+            //    _player.MoveUp();
+            //}
+
+            //if (deltaPos.y < 0)
+            //{
+            //    _player.MoveDown();
+
+            if (deltaPos.y != 0 && deltaPos.x != 0)
             {
-                _player.MoveDown();
+                Animacao.SetFloat("YSpeed", direction.y);
+                Animacao.SetFloat("XSpeed", direction.x * -1);
+                Animacao.SetFloat("velocity",    0.5f);
             }
+            else
+            {
+                Animacao.SetFloat("velocity", 0);
+            }
+            
+
+            //if (deltaPos.y == 0 && deltaPos.x == 0)
+            //{
+
+            //    Animacao.SetFloat("YSpeed", 0);
+            //    Animacao.SetFloat("XSpeed", 0);
+            //}
         }
 
         public void ChangeItem()
@@ -57,21 +82,29 @@ namespace Controller.Gameplay
 
         public void OnPlayerMovedUp(Player player)
         {
+            Animacao.SetFloat("YSpeed", 1);
+            Animacao.SetFloat("XSpeed", 0);
             Debug.Log("Player moved up!");
         }
 
         public void OnPlayerMovedDown(Player player)
         {
+            Animacao.SetFloat("YSpeed", -1);
+            Animacao.SetFloat("XSpeed", 0);
             Debug.Log("Player moved down!");
         }
 
         public void OnPlayerMovedRight(Player player)
         {
+            Animacao.SetFloat("XSpeed", -1);
+            Animacao.SetFloat("YSpeed", 0);
             Debug.Log("Player moved right!");
         }
 
         public void OnPlayerMovedLeft(Player player)
         {
+            Animacao.SetFloat("XSpeed", 1);
+            Animacao.SetFloat("YSpeed", 0);
             Debug.Log("Player moved left!");
         }
 
