@@ -93,7 +93,7 @@ namespace GameController
             switch (gameEvent.InputKey)
             {
                 case InputKey.ItemChange:
-                    gameEvent.PlayerController.ItemChange();
+                    gameEvent.PlayerController.ChangeItem();
                     break;
                 default:
                     Debug.LogWarning("Unhandled Input Event :" + EnumUtil.GetEnumValueName(gameEvent.InputKey));

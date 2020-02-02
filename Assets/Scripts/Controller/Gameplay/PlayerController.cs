@@ -18,7 +18,7 @@ namespace Controller
         {
             Transform playerTransform = gameObject.transform;
 
-            direction *= _player.Velocity;
+            direction *= Player.Velocity;
             
             Vector3 currentPosition = playerTransform.position;
             Vector3 newPos = currentPosition + new Vector3(direction.x, direction.y, 0);
@@ -49,8 +49,9 @@ namespace Controller
             }
         }
 
-        public void ItemChange()
+        public void ChangeItem()
         {
+            _player.ChangeItem();
             Debug.Log("Item Change " + gameObject.name +"!!!");
         }
 
@@ -76,6 +77,7 @@ namespace Controller
 
         public void OnItemChanged(Player player)
         {
+            
             Debug.Log("Player item changed!");
         }
 
