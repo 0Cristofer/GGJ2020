@@ -24,7 +24,7 @@ public class BearPiecesGenerator : MonoBehaviour
         DefinePlayerPieces();
         CreateBearInGame();
         DefinePositionPieces();
-        //DefinePositionPiecesRest();
+        DefinePositionPiecesRest();
 
         print("//--------------------------------------//");
     }
