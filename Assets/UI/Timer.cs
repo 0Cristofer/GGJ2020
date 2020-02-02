@@ -9,28 +9,23 @@ public class Timer : MonoBehaviour
     float Minutes;
     float MiliSeconds;
 
-    [SerializeField]
-    private float timerToStart;
+    [SerializeField] private float timerToStart;
     private bool Started = false;
 
-    [SerializeField]
-    private float timerToEnd;
+    [SerializeField] private float timerToEnd;
 
-    [SerializeField]
-    private float timerToEmergency;
+    [SerializeField] private float timerToEmergency;
 
-    [SerializeField]
-    Text WhatchText;
+    [SerializeField] Text WhatchText;
 
-    [SerializeField]
-    private Animator TimerAnimator;
+    [SerializeField] private Animator TimerAnimator;
+    [SerializeField] private GameController.GameController _gameController;
+    private bool _gameEnded = false; 
 
 
-
-    // Update is called once per frame
     void Update()
     {
-        if(!Started)
+        if (!Started)
         {
             timerToStart -= Time.deltaTime;
             if (timerToStart <= 0)
@@ -40,30 +35,25 @@ public class Timer : MonoBehaviour
         }
 
         if (timerToEnd >= 0 && Started)
-        { 
-        timerToEnd -= Time.deltaTime;
-        Seconds = timerToEnd % 60;
-        Minutes = (timerToEnd / 60);
-        MiliSeconds = (timerToEnd * 99) % 99;
+        {
+            timerToEnd -= Time.deltaTime;
+            Seconds = timerToEnd % 60;
+            Minutes = (timerToEnd / 60);
+            MiliSeconds = (timerToEnd * 99) % 99;
 
-            WhatchText.text = ((int)Minutes).ToString("00") + ":" + ((int)Seconds).ToString("00") + ":" + ((int)MiliSeconds).ToString("00");
+            WhatchText.text = ((int) Minutes).ToString("00") + ":" + ((int) Seconds).ToString("00") + ":" +
+                              ((int) MiliSeconds).ToString("00");
         }
-        else
+        
+        if ((timerToEnd <= 0) && (!_gameEnded))
         {
-            
-        print("EndOfGame");
-    }
-
-
-        if(timerToEnd <= 0)
-        {
-            print("EndOfGame");
+            _gameEnded = true;
+            _gameController.EndGame();
         }
 
-        if(timerToEmergency >= timerToEnd)
+        if (timerToEmergency >= timerToEnd)
         {
             TimerAnimator.Play("TimerEnding");
         }
-
     }
 }

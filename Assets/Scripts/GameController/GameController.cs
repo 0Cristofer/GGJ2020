@@ -16,16 +16,16 @@ namespace GameController
                 new Vector2(1, 0), new Vector2(1, 1)
             },
             new List<Vector2> {
-                new Vector2(0, 0), new Vector2(0, 1), 
-                new Vector2(1, 0), new Vector2(1, 1)
+                new Vector2(13, 7), new Vector2(14, 7), 
+                new Vector2(13, 8), new Vector2(14, 18)
             },
             new List<Vector2> {
-                new Vector2(0, 0), new Vector2(0, 1), 
-                new Vector2(1, 0), new Vector2(1, 1)
+                new Vector2(13, 0), new Vector2(14, 0), 
+                new Vector2(13, 1), new Vector2(14, 1)
             },
             new List<Vector2> {
-                new Vector2(0, 0), new Vector2(0, 1), 
-                new Vector2(1, 0), new Vector2(1, 1)
+                new Vector2(0, 7), new Vector2(1, 7), 
+                new Vector2(0, 8), new Vector2(1, 8)
             }
         };
         
@@ -45,15 +45,19 @@ namespace GameController
         private List<PlayerController> _playersControllers = null;
 
 
-        private void Init()
+        public void Init()
         {
             int playerQuantity = ApplicationController.Instance.GetNextGamePlayerQuantity();
+
+            List<BearItem> bearItems = new List<BearItem>();
+            foreach (BearItemController bearItemController in _bearItemsControllers)
+            {
+                bearItemController.Init();
+                bearItems.Add(bearItemController.GetDomain());
+            }
             
-            List<BearItem> bearItems = _bearItemsControllers.Select(bearItemController => bearItemController.GetDomain()).ToList();
             World world = new World(bearItems, _corners);
-
-            _worldController.Init(world);
-
+            
             List<Player> players = new List<Player>();
             List<PlayerController> toDestroyPlayerControllers = new List<PlayerController>();
 
@@ -62,7 +66,7 @@ namespace GameController
             for (i = 0; i < playerQuantity; i++)
             {
                 Player newPlayer = new Player(world, _corners[i][0], carpetPositions[i]);
-                _playersControllers[i].transform.position = new Vector3(_corners[i][0].x, _corners[i][0].y);
+                _playersControllers[i].transform.position = WorldUtil.ToWorldPos(_corners[i][0]);
                 _playersControllers[i].name = "Player" + i;
                 _playersControllers[i].Init(newPlayer);
                 players.Add(newPlayer);
@@ -77,9 +81,16 @@ namespace GameController
                 Destroy(toDestroyPlayerController.gameObject);
             }
             
+            _worldController.Init(world, _playersControllers, _bearItemsControllers);
             world.SetPlayers(players);
             
             StartTicking();
+        }
+
+        public void EndGame()
+        {
+            Debug.Log("Ending Game");
+            _worldController.EndGame();
         }
 
         public void EnqueueEvent(GameEvent inputEvent)
@@ -133,11 +144,6 @@ namespace GameController
             Debug.Log("Starting Game Controller at " + _tickRate + " ticks per second");
 
             StartCoroutine(Tick());
-        }
-        
-        private void Start()
-        {
-            Init();
         }
     }
 

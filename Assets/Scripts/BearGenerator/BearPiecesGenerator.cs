@@ -10,10 +10,15 @@ public class BearPiecesGenerator : MonoBehaviour
 
     [SerializeField] private List<GameObject> playerAList, playerBList;
 
+    [SerializeField] private List<GameObject> playerATargetAList, playerATargetBList;
+
     [SerializeField] private List<int> indexPiecesList = new List<int> { 1, 2, 3, 4, 5, 6 };
     [SerializeField] private List<int> sortedPiecesList;
 
     [SerializeField] private List<GameObject> targetAPosition, targetBPosition;
+
+    [SerializeField]
+    private GameController.GameController _gameController;
 
     void Start()
     {
@@ -23,10 +28,12 @@ public class BearPiecesGenerator : MonoBehaviour
         DefineCommonPieces();
         DefinePlayerPieces();
         CreateBearInGame();
+        DefineTargetUi();
         DefinePositionPieces();
         DefinePositionPiecesRest();
 
         print("//--------------------------------------//");
+        _gameController.Init();
     }
 
     private void DefinePlayerPieces()
@@ -195,6 +202,22 @@ public class BearPiecesGenerator : MonoBehaviour
         {
             GameObject clonePiece = Instantiate(playerBList[i]);
             clonePiece.transform.position = targetBPosition[i].transform.position;
+        }
+    }
+
+    private void DefineTargetUi() 
+    { 
+        foreach(GameObject piece in playerATargetAList) 
+        {
+            foreach (GameObject piecePlayer in playerAList)
+            {
+                if(piecePlayer.name== piece.name)
+                {
+                    piece.SetActive(true);
+                    print("Igual");
+                }
+            }
+
         }
     }
 }
