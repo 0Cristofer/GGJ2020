@@ -17,9 +17,6 @@ public class BearPiecesGenerator : MonoBehaviour
 
     [SerializeField] private List<GameObject> targetAPosition, targetBPosition;
 
-    [SerializeField]
-    private GameController.GameController _gameController;
-
     void Start()
     {
         playerAList = new List<GameObject>();
@@ -33,7 +30,6 @@ public class BearPiecesGenerator : MonoBehaviour
         DefinePositionPiecesRest();
 
         print("//--------------------------------------//");
-        _gameController.Init();
     }
 
     private void DefinePlayerPieces()

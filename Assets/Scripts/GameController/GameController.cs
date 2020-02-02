@@ -45,17 +45,11 @@ namespace GameController
         private List<PlayerController> _playersControllers = null;
 
 
-        public void Init()
+        private void Init()
         {
             int playerQuantity = ApplicationController.Instance.GetNextGamePlayerQuantity();
-
-            List<BearItem> bearItems = new List<BearItem>();
-            foreach (BearItemController bearItemController in _bearItemsControllers)
-            {
-                bearItemController.Init();
-                bearItems.Add(bearItemController.GetDomain());
-            }
             
+            List<BearItem> bearItems = _bearItemsControllers.Select(bearItemController => bearItemController.GetDomain()).ToList();
             World world = new World(bearItems, _corners);
             
             List<Player> players = new List<Player>();
@@ -85,12 +79,6 @@ namespace GameController
             world.SetPlayers(players);
             
             StartTicking();
-        }
-
-        public void EndGame()
-        {
-            Debug.Log("Ending Game");
-            _worldController.EndGame();
         }
 
         public void EnqueueEvent(GameEvent inputEvent)
@@ -144,6 +132,11 @@ namespace GameController
             Debug.Log("Starting Game Controller at " + _tickRate + " ticks per second");
 
             StartCoroutine(Tick());
+        }
+        
+        private void Start()
+        {
+            Init();
         }
     }
 

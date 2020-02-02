@@ -11,7 +11,7 @@ namespace Controller.Gameplay
         private ItemColor _itemColor = ItemColor.Blue;
         private BearItem _bearItem;
 
-        public void Init()
+        private void Start()
         {
             _bearItem = new BearItem(WorldUtil.ToGridPos(gameObject.transform.position), _itemColor, _itemType);
         }
