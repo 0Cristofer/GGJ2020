@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using Controller.Gameplay;
 using Domains;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace GameController
 {
@@ -45,9 +47,12 @@ namespace GameController
         [SerializeField]
         private List<PlayerController> _playersControllers = null;
 
+        [SerializeField] private TextMeshProUGUI _text;
+
 
         public void Init(List<BearItemController> player1Objective, List<BearItemController> player2Objective)
         {
+            _text.gameObject.SetActive(false);
             int playerQuantity = ApplicationController.Instance.GetNextGamePlayerQuantity();
 
             List<BearItem> bearItems = new List<BearItem>();
@@ -100,9 +105,11 @@ namespace GameController
             _worldController.EndGame();
         }
 
-        public void GameWon(Player player)
+        public void GameWon(PlayerController player)
         {
             _running = false;
+            _text.text = "Player " + player.name + "Won!";
+            _text.gameObject.SetActive(true);
             Debug.Log("Game won");
         }
 

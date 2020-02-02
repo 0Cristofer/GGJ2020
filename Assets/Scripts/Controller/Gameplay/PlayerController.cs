@@ -105,7 +105,7 @@ namespace Controller.Gameplay
         {
             if (player.ObjectiveReached())
             {
-                _gameController.GameWon(player);
+                _gameController.GameWon(this);
             }
         }
 

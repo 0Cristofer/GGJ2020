@@ -29,15 +29,17 @@ public class BearPiecesGenerator : MonoBehaviour
 
         DefineCommonPieces();
         DefinePlayerPieces();
+        
+        List<BearItemController> player1Objective = playerAList.Select(bearItem => bearItem.GetComponent<BearItemController>()).ToList();
+        List<BearItemController> player2Objective = playerBList.Select(bearItem => bearItem.GetComponent<BearItemController>()).ToList();
+       
         CreateBearInGame();
         DefineTargetUi();
         DefinePositionPieces();
         DefinePositionPiecesRest();
 
         print("//--------------------------------------//");
-
-        List<BearItemController> player1Objective = playerAList.Select(bearItem => bearItem.GetComponent<BearItemController>()).ToList();
-        List<BearItemController> player2Objective = playerBList.Select(bearItem => bearItem.GetComponent<BearItemController>()).ToList();
+        
 
         _gameController.Init(player1Objective, player2Objective);
     }
