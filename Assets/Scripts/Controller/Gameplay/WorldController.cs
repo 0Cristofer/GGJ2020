@@ -10,7 +10,7 @@ namespace Controller.Gameplay
 		#region INIT
 		public void Init(World world)
 		{
-			World.AddListener(this);
+			world.AddListener(this);
 		}
 		#endregion
 

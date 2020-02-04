@@ -19,7 +19,7 @@ namespace GameManager
 		private Queue<GameEvent> _eventQueue;
 
 		[SerializeField]
-		private List<List<GameObject>> _spawnPoints = default;
+		private List<GameObject> _spawnPoints = default;
 
 		[SerializeField]
 		private InputController _inputController = null;
@@ -58,14 +58,23 @@ namespace GameManager
 
 			List<Player> players = new List<Player>();
 			List<PlayerController> toDestroyPlayerControllers = new List<PlayerController>();
+			List<List<GameObject>> spawnRects = new List<List<GameObject>>();
 
 			int i;
+			for (i = 0; i < _spawnPoints.Count; i++)
+			{
+				if (i % 2 == 0)
+					spawnRects.Add(new List<GameObject>());
+				
+				spawnRects[i/2].Add(_spawnPoints[i]);
+			}
+
 			for (i = 0; i < playerQuantity; i++)
 			{
 				_playersControllers[i].name = "Player" + i;
 
-				System.Numerics.Vector2 bottomLeft = _spawnPoints[i][0].transform.position.ToWorldVector2();
-				System.Numerics.Vector2 topRight = _spawnPoints[i][1].transform.position.ToWorldVector2();
+				System.Numerics.Vector2 bottomLeft = spawnRects[i][0].transform.position.ToWorldVector2();
+				System.Numerics.Vector2 topRight = spawnRects[i][1].transform.position.ToWorldVector2();
 				Rect spawnPos = new Rect(bottomLeft, topRight);
 
 				Player newPlayer = new Player(_playersControllers[i].name, bottomLeft,

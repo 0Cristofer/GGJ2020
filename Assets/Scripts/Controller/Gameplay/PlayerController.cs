@@ -56,10 +56,12 @@ namespace Controller.Gameplay
 
 		public void OnItemPicked()
 		{
+			SfxManager.Instance.PlayDropSfx();
 		}
 
 		public void OnItemDropped()
 		{
+			SfxManager.Instance.PlayDropSfx();
 		}
 
 		public void OnObjectiveUpdated()
