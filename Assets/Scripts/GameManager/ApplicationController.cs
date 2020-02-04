@@ -27,9 +27,14 @@ namespace GameManager
             return _newGamePlayerQuantity;
         }
 
-        public void LoadNextScene()
+        public void LoadGameplay()
         {
             SceneManager.LoadScene("Arena01");
+        }
+
+        public void LoadMainMenu()
+        {
+            SceneManager.LoadScene("MainMenu");
         }
     }
 }

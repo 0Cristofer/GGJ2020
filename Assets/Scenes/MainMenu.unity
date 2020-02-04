@@ -1087,6 +1087,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988469510}
   m_CullTransparentMesh: 0
+--- !u!82 &1438746929 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7727776075346920375, guid: ab329e08ee9e27f4590703f3a17b64b8,
+    type: 3}
+  m_PrefabInstance: {fileID: 7727776075926079005}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1485443741
 GameObject:
   m_ObjectHideFlags: 0
@@ -1657,6 +1663,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: SfxManager
       objectReference: {fileID: 0}
+    - target: {fileID: 7727776075346920374, guid: ab329e08ee9e27f4590703f3a17b64b8,
+        type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 1438746929}
+    - target: {fileID: 7727776075346920374, guid: ab329e08ee9e27f4590703f3a17b64b8,
+        type: 3}
+      propertyPath: _explosion
+      value: 
+      objectReference: {fileID: 8300000, guid: 888ed1f7bef82094c910bbe379b0fb7e, type: 3}
+    - target: {fileID: 7727776075346920374, guid: ab329e08ee9e27f4590703f3a17b64b8,
+        type: 3}
+      propertyPath: _drop
+      value: 
+      objectReference: {fileID: 8300000, guid: dae56906914ae6846bace7d824647295, type: 3}
+    - target: {fileID: 7727776075346920374, guid: ab329e08ee9e27f4590703f3a17b64b8,
+        type: 3}
+      propertyPath: _clickButton
+      value: 
+      objectReference: {fileID: 8300000, guid: 8b91ebecd9ac89a4b8b578587fd7767f, type: 3}
+    - target: {fileID: 7727776075346920374, guid: ab329e08ee9e27f4590703f3a17b64b8,
+        type: 3}
+      propertyPath: _dropToArea
+      value: 
+      objectReference: {fileID: 8300000, guid: 514d0011735f03542b110e7fa21a0b2a, type: 3}
+    - target: {fileID: 7727776075346920374, guid: ab329e08ee9e27f4590703f3a17b64b8,
+        type: 3}
+      propertyPath: _pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 9a86cf0c1988a4743a86d84857fef6ef, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab329e08ee9e27f4590703f3a17b64b8, type: 3}
 --- !u!1001 &8757877082176925285

@@ -51,12 +51,12 @@ namespace Controller.Gameplay
 		#region DOMAIN_LISTENER
 		public void OnPositionChanged(System.Numerics.Vector2 previousPosition)
 		{
-			transform.position = WorldUtil.ToUnityPos(Player.Position.ToUnityVector2());
+			transform.position = Player.Position.ToUnityVector2();
 		}
 
 		public void OnItemPicked()
 		{
-			SfxManager.Instance.PlayDropSfx();
+			SfxManager.Instance.PlayPickSfx();
 		}
 
 		public void OnItemDropped()
@@ -66,10 +66,12 @@ namespace Controller.Gameplay
 
 		public void OnObjectiveUpdated()
 		{
+			SfxManager.Instance.PlayDropToObjectiveSfx();
 		}
 
 		public void OnObjectiveReached()
 		{
+			SfxManager.Instance.PlayExplosionSfx();
 			_gameController.GameWon(Player);
 		}
 		#endregion

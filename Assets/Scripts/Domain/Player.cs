@@ -15,7 +15,7 @@ namespace Domain
 		private Objective _objective;
 
 		private bool _progressUpdated;
-		
+
 		private readonly List<IPlayerUpdatedListener> _playerListeners;
 
 		public Player(string name, Vector2 initialPosition, Objective objective)
@@ -28,6 +28,7 @@ namespace Domain
 			_playerListeners = new List<IPlayerUpdatedListener>();
 		}
 
+		#region PUBLIC_INPUTS
 		public void SetPosition(Vector2 newPosition)
 		{
 			Vector2 previousPosition = Position;
@@ -41,18 +42,24 @@ namespace Domain
 
 		public void ChangeItem()
 		{
-			DropItem();
 			PickItem();
 			CheckObjectiveReached();
 		}
+		#endregion
 
+		#region PRIVATE_METHODS
 		private void PickItem()
 		{
-			_currentItem = _world.PickItem(this);
+			BearItem newItem = _world.PickItem(this);
 
-			if (_currentItem == null) 
+			if (_currentItem != null)
+				DropItem();
+
+			_currentItem = newItem;
+
+			if (_currentItem == null)
 				return;
-			
+
 			FireOnItemPicked();
 		}
 
@@ -63,7 +70,10 @@ namespace Domain
 
 			UpdateProgress();
 
-			_world.DropItem(_currentItem);
+			if (!_progressUpdated)
+				_world.DropItem(_currentItem);
+
+			_currentItem = null;
 			FireOnItemDropped();
 		}
 
@@ -80,7 +90,8 @@ namespace Domain
 				_progressUpdated = false;
 				return;
 			}
-			
+
+			_progressUpdated = true;
 			FireOnObjectiveUpdated();
 		}
 
@@ -88,16 +99,20 @@ namespace Domain
 		{
 			if (!_progressUpdated)
 				return;
-			
+
 			if (_objective.IsObjectiveReached())
 				FireObjectiveReached();
 		}
+		#endregion
 
+		#region INTERNAL_METHODS
 		internal void SetWorld(World world)
 		{
 			_world = world;
 		}
+		#endregion
 
+		#region LISTENERS_INVOCATION
 		private void FireOnPositionChanged(Vector2 previousPosition)
 		{
 			foreach (IPlayerUpdatedListener listener in _playerListeners)
@@ -137,7 +152,9 @@ namespace Domain
 				listener.OnObjectiveReached();
 			}
 		}
+		#endregion
 
+		#region LISTENER_HANDLERS
 		public void AddListener(IPlayerUpdatedListener listener)
 		{
 			listener.Player = this;
@@ -148,6 +165,7 @@ namespace Domain
 		{
 			return _playerListeners.Remove(listener);
 		}
+		#endregion
 	}
 
 	public interface IPlayerUpdatedListener

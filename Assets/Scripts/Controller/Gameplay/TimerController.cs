@@ -27,8 +27,8 @@ namespace Controller.Gameplay
 		private Animator _timerAnimator = default;
 		[SerializeField]
 		private GameController _gameController = default;
-		
-		private bool _gameEnded = false;
+
+		public bool _gameEnded = false;
 
 		private void Update()
 		{
@@ -39,6 +39,11 @@ namespace Controller.Gameplay
 				{
 					_started = true;
 				}
+			}
+
+			if (_gameEnded)
+			{
+				return;
 			}
 
 			if (_timerToEnd >= 0 && _started)

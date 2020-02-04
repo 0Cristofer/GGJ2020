@@ -24,14 +24,18 @@ namespace Domain
             SetWorldToPlayers();
         }
 
+        #region INTERNAL_INPUT
         internal BearItem PickItem(Player player)
         {
             BearItem bearItem = _bearParts.FirstOrDefault((part) =>
-                (Vector2.Distance(part.Position, player.Position) > _worldConfig.MaxPickDistance));
-            
-            if (bearItem != null)
-                FireOnItemGrabbed(bearItem, player);
-            
+                (Vector2.Distance(part.Position, player.Position) < _worldConfig.MaxPickDistance));
+
+            if (bearItem == null) 
+                return null;
+
+            _bearParts.Remove(bearItem);
+            FireOnItemGrabbed(bearItem, player);
+
             return bearItem;
         }
 
@@ -40,13 +44,17 @@ namespace Domain
             _bearParts.Add(item);
             FireOnItemDropped(item);
         }
-
+        #endregion
+        
+        #region PRIVATE_METHODS
         private void SetWorldToPlayers()
         {
             foreach (Player player in _players)
                 player.SetWorld(this);
         }
-
+        #endregion
+        
+        #region LISTENERS_INVOCATION
         private void FireOnItemGrabbed(BearItem item, Player player)
         {
             foreach (IWorldListener listener in _worldListeners)
@@ -62,7 +70,9 @@ namespace Domain
                 listener.OnItemDropped(item);
             }
         }
+        #endregion
         
+        #region LISTENER_HANDLERS
         public void AddListener(IWorldListener listener)
         {
             listener.World = this;
@@ -73,6 +83,7 @@ namespace Domain
         {
             return _worldListeners.Remove(listener);
         }
+        #endregion
     }
 
     public interface IWorldListener

@@ -2,18 +2,18 @@
 {
 	public struct BearPart
 	{
-		public PartColor PartColor { get; }
-		public PartType PartType { get; }
+		private readonly PartColor _partColor;
+		private readonly PartType _partType;
 
 		public BearPart(PartType partType, PartColor partColor)
 		{
-			PartType = partType;
-			PartColor = partColor;
+			_partType = partType;
+			_partColor = partColor;
 		}
 
 		public static bool operator ==(BearPart a, BearPart b)
 		{
-			return (a.PartType == b.PartType) && (a.PartColor == b.PartColor);
+			return (a._partType == b._partType) && (a._partColor == b._partColor);
 		}
 
 		public static bool operator !=(BearPart a, BearPart b)
@@ -30,7 +30,7 @@
 		{
 			unchecked
 			{
-				return ((int) PartColor * 397) ^ (int) PartType;
+				return ((int) _partColor * 397) ^ (int) _partType;
 			}
 		}
 	}

@@ -33,7 +33,7 @@ namespace GameManager
                 }
 
                 float xAxis = Input.GetAxisRaw(GetAxisCode(InputAxis.Horizontal) + player.gameObject.name);
-                float yAxis = Input.GetAxisRaw(GetAxisCode(InputAxis.Vertical) + player.gameObject.name) * -1;
+                float yAxis = Input.GetAxisRaw(GetAxisCode(InputAxis.Vertical) + player.gameObject.name);
                 
                 Vector2 joystickVector = new Vector2(
                     xAxis,

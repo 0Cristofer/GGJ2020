@@ -9,7 +9,7 @@ namespace GameManager
 		[SerializeField]
 		private AudioSource _audioSource = null;
 		[SerializeField]
-		private AudioClip _explosion = null, _drop = null, _clickButton = null;
+		private AudioClip _explosion = null, _pick = null, _drop = null, _clickButton = null, _dropToArea = null;
 
 		private void Awake()
 		{
@@ -26,14 +26,24 @@ namespace GameManager
 			_audioSource.PlayOneShot(_explosion);
 		}
 
-		public void PlayDropSfx()
+		public void PlayPickSfx()
 		{
-			_audioSource.PlayOneShot(_drop);
+			_audioSource.PlayOneShot(_pick);
 		}
 
 		public void PlayClickButtonSfx()
 		{
 			_audioSource.PlayOneShot(_clickButton);
+		}
+
+		public void PlayDropToObjectiveSfx()
+		{
+			_audioSource.PlayOneShot(_dropToArea);
+		}
+		
+		public void PlayDropSfx()
+		{
+			_audioSource.PlayOneShot(_drop);
 		}
 	}
 }

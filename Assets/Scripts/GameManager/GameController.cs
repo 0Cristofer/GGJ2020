@@ -32,6 +32,8 @@ namespace GameManager
 		private List<PlayerController> _playersControllers = null;
 
 		[SerializeField]
+		private TimerController _timerController;
+		[SerializeField]
 		private TextMeshProUGUI _text = null;
 
 
@@ -93,7 +95,7 @@ namespace GameManager
 				Destroy(toDestroyPlayerController.gameObject);
 			}
 
-			World world = new World(new WorldConfig(1f), players, bearItems);
+			World world = new World(new WorldConfig(0.6f), players, bearItems);
 			_worldController.Init(world);
 
 			StartTicking();
@@ -107,6 +109,7 @@ namespace GameManager
 
 		public void GameWon(Player player)
 		{
+			_timerController._gameEnded = true;
 			SetFinalText("Player " + player.Name + "Won!");
 			StopTicking();
 		}
