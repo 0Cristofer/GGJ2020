@@ -51,7 +51,7 @@ namespace Controller.Gameplay
 		#region DOMAIN_LISTENER
 		public void OnPositionChanged(System.Numerics.Vector2 previousPosition)
 		{
-			transform.position = Player.Position.ToUnityVector2();
+			transform.position = WorldUtil.ToUnityPos(Player.Position.ToUnityVector2());
 		}
 
 		public void OnItemPicked()

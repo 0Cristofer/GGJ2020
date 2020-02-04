@@ -7,10 +7,12 @@ namespace Controller.Gameplay
 	{
 		public World World { get; set; }
 
+		#region INIT
 		public void Init(World world)
 		{
 			World.AddListener(this);
 		}
+		#endregion
 
 		#region DOMAIN_LISTENERS
 		public void OnItemGrabbed(BearItem item, Player player)

@@ -3339,8 +3339,51 @@ PrefabInstance:
       propertyPath: _gameController
       value: 
       objectReference: {fileID: 1359021797}
+    - target: {fileID: 2438296972683624166, guid: 24c0b56f21d38b44a8823c9dffe6e814,
+        type: 3}
+      propertyPath: _timerToStart
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2438296972683624166, guid: 24c0b56f21d38b44a8823c9dffe6e814,
+        type: 3}
+      propertyPath: _timerToEnd
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 2438296972683624166, guid: 24c0b56f21d38b44a8823c9dffe6e814,
+        type: 3}
+      propertyPath: _timerToEmergency
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2438296972683624166, guid: 24c0b56f21d38b44a8823c9dffe6e814,
+        type: 3}
+      propertyPath: _timerAnimator
+      value: 
+      objectReference: {fileID: 539193214}
+    - target: {fileID: 2438296972683624166, guid: 24c0b56f21d38b44a8823c9dffe6e814,
+        type: 3}
+      propertyPath: _watchText
+      value: 
+      objectReference: {fileID: 539193213}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24c0b56f21d38b44a8823c9dffe6e814, type: 3}
+--- !u!114 &539193213 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2438296973109595192, guid: 24c0b56f21d38b44a8823c9dffe6e814,
+    type: 3}
+  m_PrefabInstance: {fileID: 539193212}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &539193214 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2438296972683624165, guid: 24c0b56f21d38b44a8823c9dffe6e814,
+    type: 3}
+  m_PrefabInstance: {fileID: 539193212}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &551016240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11373,184 +11416,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d159d8960500a1a4d9f701495664f670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pieceHeadList:
-  - {fileID: 582416170}
-  - {fileID: 926915456}
-  - {fileID: 954706689}
-  - {fileID: 1494827762}
-  pieceTorsoList:
-  - {fileID: 46362290}
-  - {fileID: 1611593263}
-  - {fileID: 2005473277}
-  - {fileID: 2018728783}
-  pieceArmLeftList:
-  - {fileID: 1112275762}
-  - {fileID: 46849745}
-  - {fileID: 180232546}
-  - {fileID: 1603522999}
-  pieceArmRightlist:
-  - {fileID: 94341563}
-  - {fileID: 500871301}
-  - {fileID: 300032296}
-  - {fileID: 1562648705}
-  pieceLegLeftList:
-  - {fileID: 507472513}
-  - {fileID: 991072545}
-  - {fileID: 1167797516}
-  - {fileID: 435927024}
-  pieceLegRightList:
-  - {fileID: 492025354}
-  - {fileID: 1519792697}
-  - {fileID: 622255069}
-  - {fileID: 1204892117}
-  groupLeftList:
-  - {fileID: 1807310433}
-  - {fileID: 1813450809}
-  - {fileID: 1928517766}
-  - {fileID: 124674569}
-  - {fileID: 2090663554}
-  - {fileID: 1399874877}
-  - {fileID: 2052901823}
-  - {fileID: 1929318260}
-  - {fileID: 615698036}
-  - {fileID: 83810047}
-  - {fileID: 1805667510}
-  - {fileID: 196274410}
-  - {fileID: 1264536971}
-  - {fileID: 39116066}
-  - {fileID: 1549027132}
-  - {fileID: 1955491562}
-  - {fileID: 673110093}
-  - {fileID: 684441668}
-  - {fileID: 1209890737}
-  - {fileID: 1969314423}
-  - {fileID: 1289698947}
-  - {fileID: 1689729499}
-  - {fileID: 528933327}
-  groupCenterList:
-  - {fileID: 1836050174}
-  - {fileID: 82812470}
-  - {fileID: 1969317220}
-  - {fileID: 941478647}
-  - {fileID: 176725569}
-  - {fileID: 1909472523}
-  - {fileID: 696764838}
-  - {fileID: 1406373322}
-  - {fileID: 781607022}
-  - {fileID: 2085777269}
-  - {fileID: 1040542137}
-  - {fileID: 1790156969}
-  - {fileID: 463502382}
-  - {fileID: 1779128506}
-  - {fileID: 1267776944}
-  - {fileID: 841841554}
-  - {fileID: 966630857}
-  - {fileID: 1560064169}
-  - {fileID: 1901981955}
-  - {fileID: 1735927674}
-  - {fileID: 1460164004}
-  - {fileID: 308296175}
-  - {fileID: 1811069193}
-  - {fileID: 1393536639}
-  - {fileID: 1111905780}
-  - {fileID: 2080936093}
-  - {fileID: 346234691}
-  - {fileID: 1970389058}
-  - {fileID: 1976995438}
-  - {fileID: 521857371}
-  groupRightList:
-  - {fileID: 1892088549}
-  - {fileID: 307132337}
-  - {fileID: 501340822}
-  - {fileID: 607370564}
-  - {fileID: 825777461}
-  - {fileID: 605918226}
-  - {fileID: 940212693}
-  - {fileID: 1741662868}
-  - {fileID: 1470420594}
-  - {fileID: 1151623082}
-  - {fileID: 820140021}
-  - {fileID: 1753754201}
-  - {fileID: 600326960}
-  - {fileID: 1593504342}
-  - {fileID: 1640194932}
-  - {fileID: 816525064}
-  - {fileID: 1745753408}
-  - {fileID: 792456267}
-  - {fileID: 768812911}
-  - {fileID: 1784634589}
-  - {fileID: 1386981285}
-  - {fileID: 925034196}
-  - {fileID: 1753617343}
-  - {fileID: 827046324}
-  playerAList: []
-  playerBList: []
-  playerTargetAList:
-  - {fileID: 1751208646}
-  - {fileID: 9329856}
-  - {fileID: 1679297996}
-  - {fileID: 2016770190}
-  - {fileID: 740266243}
-  - {fileID: 1222466806}
-  - {fileID: 1753694595}
-  - {fileID: 1928381953}
-  - {fileID: 314994159}
-  - {fileID: 2008864149}
-  - {fileID: 1111008875}
-  - {fileID: 1383353514}
-  - {fileID: 1223800840}
-  - {fileID: 790084859}
-  - {fileID: 1704901451}
-  - {fileID: 1412026412}
-  - {fileID: 1686997781}
-  - {fileID: 1906534333}
-  - {fileID: 1919911621}
-  - {fileID: 932552562}
-  - {fileID: 1053441866}
-  - {fileID: 641829333}
-  - {fileID: 806292697}
-  - {fileID: 154648805}
-  playerTargetBList:
-  - {fileID: 155283263}
-  - {fileID: 1503642269}
-  - {fileID: 376398288}
-  - {fileID: 1817050328}
-  - {fileID: 338907846}
-  - {fileID: 1424423434}
-  - {fileID: 127794938}
-  - {fileID: 1392080768}
-  - {fileID: 1364224517}
-  - {fileID: 143377341}
-  - {fileID: 506065177}
-  - {fileID: 1139416931}
-  - {fileID: 2124836647}
-  - {fileID: 1187654576}
-  - {fileID: 455520463}
-  - {fileID: 486654178}
-  - {fileID: 1666037949}
-  - {fileID: 220671945}
-  - {fileID: 1046811198}
-  - {fileID: 1697376046}
-  - {fileID: 1111937579}
-  - {fileID: 26981194}
-  - {fileID: 1120831671}
-  - {fileID: 802939965}
-  indexPiecesList: 010000000200000003000000040000000500000006000000
-  sortedPiecesList: 
-  targetAPosition:
-  - {fileID: 57489780}
-  - {fileID: 537130160}
-  - {fileID: 717354122}
-  - {fileID: 1532004111}
-  - {fileID: 1348472085}
-  - {fileID: 1646950404}
-  targetBPosition:
-  - {fileID: 2115654885}
-  - {fileID: 2016781139}
-  - {fileID: 1523410646}
-  - {fileID: 1519611749}
-  - {fileID: 983092792}
-  - {fileID: 893433120}
+  _pieceHeadList: []
+  _pieceTorsoList: []
+  _pieceArmLeftList: []
+  _pieceArmRightlist: []
+  _pieceLegLeftList: []
+  _pieceLegRightList: []
+  _groupLeftList: []
+  _groupCenterList: []
+  _groupRightList: []
+  _playerAList: []
+  _playerBList: []
+  _playerTargetAList: []
+  _playerTargetBList: []
+  _indexPiecesList: 010000000200000003000000040000000500000006000000
+  _sortedPiecesList: 
+  _targetAPosition: []
+  _targetBPosition: []
   _gameController: {fileID: 1359021797}
 --- !u!4 &1990299820
 Transform:

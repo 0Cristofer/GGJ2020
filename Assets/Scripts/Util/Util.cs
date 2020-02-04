@@ -34,7 +34,7 @@ namespace Util
             return newPos;
         }
 
-        public static Vector2 ToWorldPos(Vector2 pos)
+        public static Vector2 ToUnityPos(Vector2 pos)
         {
             pos.x *= XFactor;
             Vector2 newPos = pos - TranslationVector;
