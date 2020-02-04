@@ -1,252 +1,267 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Controller.Gameplay;
-using Domains;
+using GameManager;
 using UnityEngine;
 
-public class BearPiecesGenerator : MonoBehaviour
+namespace BearGenerator
 {
-    [SerializeField] private List<GameObject> pieceHeadList, pieceTorsoList, pieceArmLeftList, pieceArmRightlist, pieceLegLeftList, pieceLegRightList;
-    [SerializeField] private List<GameObject> groupLeftList, groupCenterList, groupRightList;
+	public class BearPiecesGenerator : MonoBehaviour
+	{
+		[SerializeField]
+		private List<GameObject> _pieceHeadList = null,
+			_pieceTorsoList = null,
+			_pieceArmLeftList = null,
+			_pieceArmRightlist = null,
+			_pieceLegLeftList = null,
+			_pieceLegRightList = null;
+		[SerializeField]
+		private List<GameObject> _groupLeftList = null, _groupCenterList = null, _groupRightList = null;
 
-    [SerializeField] private List<GameObject> playerAList, playerBList;
+		[SerializeField]
+		private List<GameObject> _playerAList = null, _playerBList = null;
 
-    [SerializeField] private List<GameObject> playerTargetAList, playerTargetBList;
+		[SerializeField]
+		private List<GameObject> _playerTargetAList = null, _playerTargetBList = null;
 
-    [SerializeField] private List<int> indexPiecesList = new List<int> { 1, 2, 3, 4, 5, 6 };
-    [SerializeField] private List<int> sortedPiecesList;
+		[SerializeField]
+		private List<int> _indexPiecesList = new List<int> {1, 2, 3, 4, 5, 6};
+		[SerializeField]
+		private List<int> _sortedPiecesList = null;
 
-    [SerializeField] private List<GameObject> targetAPosition, targetBPosition;
+		[SerializeField]
+		private List<GameObject> _targetAPosition = null, _targetBPosition = null;
 
-    [SerializeField]
-    private GameController.GameController _gameController;
+		[SerializeField]
+		private GameController _gameController = null;
 
-    void Start()
-    {
-        playerAList = new List<GameObject>();
-        playerBList = new List<GameObject>();
+		void Start()
+		{
+			_playerAList = new List<GameObject>();
+			_playerBList = new List<GameObject>();
 
-        DefineCommonPieces();
-        DefinePlayerPieces();
-        
-        List<BearItemController> player1Objective = playerAList.Select(bearItem => bearItem.GetComponent<BearItemController>()).ToList();
-        List<BearItemController> player2Objective = playerBList.Select(bearItem => bearItem.GetComponent<BearItemController>()).ToList();
-       
-        CreateBearInGame();
-        DefineTargetUi();
-        DefinePositionPieces();
-        DefinePositionPiecesRest();
+			DefineCommonPieces();
+			DefinePlayerPieces();
 
-        print("//--------------------------------------//");
-        
+			List<BearItemController> player1Objective =
+				_playerAList.Select(bearItem => bearItem.GetComponent<BearItemController>()).ToList();
+			List<BearItemController> player2Objective =
+				_playerBList.Select(bearItem => bearItem.GetComponent<BearItemController>()).ToList();
 
-        _gameController.Init(player1Objective, player2Objective);
-    }
+			CreateBearInGame();
+			DefineTargetUi();
+			DefinePositionPieces();
+			DefinePositionPiecesRest();
 
-    private void DefinePlayerPieces()
-    {
-        CheckIfIsCommon(pieceHeadList, (int)PiecesEnum.Head);
-        CheckIfIsCommon(pieceTorsoList, (int)PiecesEnum.Torso);
-        CheckIfIsCommon(pieceArmLeftList, (int)PiecesEnum.ArmLeft);
-        CheckIfIsCommon(pieceArmRightlist, (int)PiecesEnum.ArmRight);
-        CheckIfIsCommon(pieceLegLeftList, (int)PiecesEnum.LegLeft);
-        CheckIfIsCommon(pieceLegRightList, (int)PiecesEnum.LegRight);
-    }
+			print("//--------------------------------------//");
 
-    private void CheckIfIsCommon(List<GameObject> list, int indexPiece)
-    {
-        GameObject newPiece = GetRandomItem(list);
-        playerAList.Add(newPiece);
 
-        if (sortedPiecesList.Contains(indexPiece + 1))
-        {
-            playerBList.Add(newPiece);
-        }
-        else
-        {
-            newPiece = GetRandomItem(list);
-            playerBList.Add(newPiece);
-        }
-    }
+			_gameController.Init(player1Objective, player2Objective);
+		}
 
-    private GameObject GetRandomItem(List<GameObject> list)
-    {
-        GameObject newPiece = list[Random.Range(0, list.Count)];
-        list.Remove(newPiece);
+		private void DefinePlayerPieces()
+		{
+			CheckIfIsCommon(_pieceHeadList, (int) PiecesEnum.Head);
+			CheckIfIsCommon(_pieceTorsoList, (int) PiecesEnum.Torso);
+			CheckIfIsCommon(_pieceArmLeftList, (int) PiecesEnum.ArmLeft);
+			CheckIfIsCommon(_pieceArmRightlist, (int) PiecesEnum.ArmRight);
+			CheckIfIsCommon(_pieceLegLeftList, (int) PiecesEnum.LegLeft);
+			CheckIfIsCommon(_pieceLegRightList, (int) PiecesEnum.LegRight);
+		}
 
-        return newPiece;
-    }
+		private void CheckIfIsCommon(List<GameObject> list, int indexPiece)
+		{
+			GameObject newPiece = GetRandomItem(list);
+			_playerAList.Add(newPiece);
 
-    private int GetBiggerPosition(List<int> list)
-    {
-        if (list[0] > list[1])
-        {
-            return list[0];
-        }
+			if (_sortedPiecesList.Contains(indexPiece + 1))
+			{
+				_playerBList.Add(newPiece);
+			}
+			else
+			{
+				newPiece = GetRandomItem(list);
+				_playerBList.Add(newPiece);
+			}
+		}
 
-        return list[1];
-    }
+		private GameObject GetRandomItem(List<GameObject> list)
+		{
+			GameObject newPiece = list[Random.Range(0, list.Count)];
+			list.Remove(newPiece);
 
-    private int GetSmallerPosition(List<int> list)
-    {
-        if (list[0] < list[1])
-        {
-            return list[0];
-        }
+			return newPiece;
+		}
 
-        return list[1];
-    }
+		private int GetBiggerPosition(List<int> list)
+		{
+			if (list[0] > list[1])
+			{
+				return list[0];
+			}
 
-    private void DefineCommonPieces()
-    {
-        int selectedIndex;
+			return list[1];
+		}
 
-        selectedIndex = indexPiecesList[Random.Range(0, indexPiecesList.Count)];
-        indexPiecesList.Remove(selectedIndex);
+		private int GetSmallerPosition(List<int> list)
+		{
+			if (list[0] < list[1])
+			{
+				return list[0];
+			}
 
-        sortedPiecesList.Add(selectedIndex);
+			return list[1];
+		}
 
-        selectedIndex = indexPiecesList[Random.Range(0, indexPiecesList.Count)];
-        indexPiecesList.Remove(selectedIndex);
+		private void DefineCommonPieces()
+		{
+			int selectedIndex;
 
-        sortedPiecesList.Add(selectedIndex);
-    }
+			selectedIndex = _indexPiecesList[Random.Range(0, _indexPiecesList.Count)];
+			_indexPiecesList.Remove(selectedIndex);
 
-    private void DefinePositionPieces()
-    {
-        //CENTER===================================================
-        GameObject newPiecePosition;
-        int newindex;
+			_sortedPiecesList.Add(selectedIndex);
 
-        newPiecePosition = GetRandomItem(groupCenterList);
-        newindex = GetBiggerPosition(sortedPiecesList);
+			selectedIndex = _indexPiecesList[Random.Range(0, _indexPiecesList.Count)];
+			_indexPiecesList.Remove(selectedIndex);
 
-        playerAList[newindex - 1].transform.position = newPiecePosition.transform.position;
-        playerAList.Remove(playerAList[newindex - 1]);
-        playerBList.Remove(playerBList[newindex - 1]);
+			_sortedPiecesList.Add(selectedIndex);
+		}
 
-        newPiecePosition = GetRandomItem(groupCenterList);
-        newindex = GetSmallerPosition(sortedPiecesList);
+		private void DefinePositionPieces()
+		{
+			//CENTER===================================================
+			GameObject newPiecePosition;
+			int newindex;
 
-        playerAList[newindex - 1].transform.position = newPiecePosition.transform.position;
-        playerAList.Remove(playerAList[newindex - 1]);
-        playerBList.Remove(playerBList[newindex - 1]);
-    
-        //LEFT===================================================
+			newPiecePosition = GetRandomItem(_groupCenterList);
+			newindex = GetBiggerPosition(_sortedPiecesList);
 
-        MovePieceInPosition(groupLeftList, playerAList);
-        MovePieceInPosition(groupLeftList, playerAList);
+			_playerAList[newindex - 1].transform.position = newPiecePosition.transform.position;
+			_playerAList.Remove(_playerAList[newindex - 1]);
+			_playerBList.Remove(_playerBList[newindex - 1]);
 
-        MovePieceInPosition(groupLeftList, playerBList);
-        MovePieceInPosition(groupLeftList, playerBList);
+			newPiecePosition = GetRandomItem(_groupCenterList);
+			newindex = GetSmallerPosition(_sortedPiecesList);
 
-        //RIGHT===================================================
+			_playerAList[newindex - 1].transform.position = newPiecePosition.transform.position;
+			_playerAList.Remove(_playerAList[newindex - 1]);
+			_playerBList.Remove(_playerBList[newindex - 1]);
 
-        MovePieceInPosition(groupRightList, playerAList);
-        MovePieceInPosition(groupRightList, playerAList);
+			//LEFT===================================================
 
-        MovePieceInPosition(groupRightList, playerBList);
-        MovePieceInPosition(groupRightList, playerBList);
-    }
+			MovePieceInPosition(_groupLeftList, _playerAList);
+			MovePieceInPosition(_groupLeftList, _playerAList);
 
-    private void DefinePositionPiecesRest()
-    {
-        List<GameObject> pieceRestlist = new List<GameObject>();
+			MovePieceInPosition(_groupLeftList, _playerBList);
+			MovePieceInPosition(_groupLeftList, _playerBList);
 
-        pieceRestlist = pieceRestlist.Concat(pieceHeadList).ToList();
-        pieceRestlist = pieceRestlist.Concat(pieceTorsoList).ToList();
-        pieceRestlist = pieceRestlist.Concat(pieceArmLeftList).ToList();
-        pieceRestlist = pieceRestlist.Concat(pieceArmRightlist).ToList();
-        pieceRestlist = pieceRestlist.Concat(pieceLegLeftList).ToList();
-        pieceRestlist = pieceRestlist.Concat(pieceLegRightList).ToList();
+			//RIGHT===================================================
 
-        int groupIndex = 0;
+			MovePieceInPosition(_groupRightList, _playerAList);
+			MovePieceInPosition(_groupRightList, _playerAList);
 
-        while(pieceRestlist.Count > 0)
-        {
-            var positionList = GetGroupPiecePositionByIndex(groupIndex);
+			MovePieceInPosition(_groupRightList, _playerBList);
+			MovePieceInPosition(_groupRightList, _playerBList);
+		}
 
-            MovePieceInPosition(positionList, pieceRestlist);
+		private void DefinePositionPiecesRest()
+		{
+			List<GameObject> pieceRestlist = new List<GameObject>();
 
-            groupIndex++;
-            if (groupIndex == 3) groupIndex = 0;
-        }
-    }
+			pieceRestlist = pieceRestlist.Concat(_pieceHeadList).ToList();
+			pieceRestlist = pieceRestlist.Concat(_pieceTorsoList).ToList();
+			pieceRestlist = pieceRestlist.Concat(_pieceArmLeftList).ToList();
+			pieceRestlist = pieceRestlist.Concat(_pieceArmRightlist).ToList();
+			pieceRestlist = pieceRestlist.Concat(_pieceLegLeftList).ToList();
+			pieceRestlist = pieceRestlist.Concat(_pieceLegRightList).ToList();
 
-    private List<GameObject> GetGroupPiecePositionByIndex(int index)
-    {
-        if(index == 0)
-        {
-            return groupLeftList;
-        }
-        else if (index == 1)
-        {
-            return groupCenterList;
-        }
-        else
-        {
-            return groupRightList;
-        }
+			int groupIndex = 0;
 
-    }
+			while (pieceRestlist.Count > 0)
+			{
+				var positionList = GetGroupPiecePositionByIndex(groupIndex);
 
-    private void MovePieceInPosition(List<GameObject> positionList, List<GameObject> pieceList)
-    {
-        GameObject newPiecePosition = GetRandomItem(positionList);
-        GameObject newPlayerPiece = GetRandomItem(pieceList);
-        newPlayerPiece.transform.position = newPiecePosition.transform.position;
-    }
+				MovePieceInPosition(positionList, pieceRestlist);
 
-    private void CreateBearInGame()
-    {
-        for (int i = 0; i < playerAList.Count; i++)
-        {
-            GameObject clonePiece =  Instantiate(playerAList[i]);
-            clonePiece.transform.position = targetAPosition[i].transform.position;
-        }
+				groupIndex++;
+				if (groupIndex == 3) groupIndex = 0;
+			}
+		}
 
-        for (int i = 0; i < playerBList.Count; i++)
-        {
-            GameObject clonePiece = Instantiate(playerBList[i]);
-            clonePiece.transform.position = targetBPosition[i].transform.position;
-        }
-    }
+		private List<GameObject> GetGroupPiecePositionByIndex(int index)
+		{
+			if (index == 0)
+			{
+				return _groupLeftList;
+			}
+			else if (index == 1)
+			{
+				return _groupCenterList;
+			}
+			else
+			{
+				return _groupRightList;
+			}
+		}
 
-    private void DefineTargetUi() 
-    {
-        print(playerTargetAList.Count() + " " + playerAList.Count());
+		private void MovePieceInPosition(List<GameObject> positionList, List<GameObject> pieceList)
+		{
+			GameObject newPiecePosition = GetRandomItem(positionList);
+			GameObject newPlayerPiece = GetRandomItem(pieceList);
+			newPlayerPiece.transform.position = newPiecePosition.transform.position;
+		}
 
-        foreach(GameObject piece in playerTargetAList) 
-        {
-            foreach (GameObject piecePlayer in playerAList)
-            {
-                if(piece.name.Contains(piecePlayer.name))
-                {
-                    piece.SetActive(true);
-                }
-            }
-        }
+		private void CreateBearInGame()
+		{
+			for (int i = 0; i < _playerAList.Count; i++)
+			{
+				GameObject clonePiece = Instantiate(_playerAList[i]);
+				clonePiece.transform.position = _targetAPosition[i].transform.position;
+			}
 
-        foreach (GameObject piece in playerTargetBList)
-        {
-            foreach (GameObject piecePlayer in playerBList)
-            {
-                if (piece.name.Contains(piecePlayer.name))
-                {
-                    piece.SetActive(true);
-                }
-            }
-        }
-    }
-}
+			for (int i = 0; i < _playerBList.Count; i++)
+			{
+				GameObject clonePiece = Instantiate(_playerBList[i]);
+				clonePiece.transform.position = _targetBPosition[i].transform.position;
+			}
+		}
 
-public enum PiecesEnum
-{
-    Head,
-    Torso,
-    ArmLeft,
-    ArmRight,
-    LegLeft,
-    LegRight
+		private void DefineTargetUi()
+		{
+			print(_playerTargetAList.Count() + " " + _playerAList.Count());
+
+			foreach (GameObject piece in _playerTargetAList)
+			{
+				foreach (GameObject piecePlayer in _playerAList)
+				{
+					if (piece.name.Contains(piecePlayer.name))
+					{
+						piece.SetActive(true);
+					}
+				}
+			}
+
+			foreach (GameObject piece in _playerTargetBList)
+			{
+				foreach (GameObject piecePlayer in _playerBList)
+				{
+					if (piece.name.Contains(piecePlayer.name))
+					{
+						piece.SetActive(true);
+					}
+				}
+			}
+		}
+	}
+
+	public enum PiecesEnum
+	{
+		Head,
+		Torso,
+		ArmLeft,
+		ArmRight,
+		LegLeft,
+		LegRight
+	}
 }

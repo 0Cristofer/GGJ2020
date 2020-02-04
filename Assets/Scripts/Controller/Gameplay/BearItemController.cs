@@ -1,24 +1,27 @@
-﻿using Domains;
+﻿using Domain;
 using UnityEngine;
+using Util;
 
 namespace Controller.Gameplay
 {
-    public class BearItemController: MonoBehaviour
-    {
-        [SerializeField]
-        private ItemType _itemType = ItemType.Torso;
-        [SerializeField]
-        private ItemColor _itemColor = ItemColor.Blue;
-        private BearItem _bearItem;
+	public class BearItemController : MonoBehaviour, IBearPartListener
+	{
+		public BearItem BearItem { get; set; }
 
-        public void Init()
-        {
-            _bearItem = new BearItem(WorldUtil.ToGridPos(gameObject.transform.position), _itemColor, _itemType);
-        }
+		[SerializeField]
+		private PartType _partType = PartType.Torso;
+		[SerializeField]
+		private PartColor _partColor = PartColor.Blue;
 
-        public BearItem GetDomain()
-        {
-            return _bearItem;
-        }
-    }
+		public void Init()
+		{
+			BearItem = new BearItem(transform.position.ToWorldVector2(), new BearPart(_partType, _partColor));
+			BearItem.AddListener(this);
+		}
+
+		public void OnPositionChanged(System.Numerics.Vector2 previousPosition)
+		{
+			transform.position = BearItem.Position.ToUnityVector2();
+		}
+	}
 }

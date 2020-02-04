@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace GameController
+namespace GameManager
 {
     public class ApplicationController: MonoBehaviour
     {

@@ -1,4 +1,4 @@
-﻿using GameController;
+﻿using GameManager;
 using UnityEngine;
 
 namespace Controller.MainMenu

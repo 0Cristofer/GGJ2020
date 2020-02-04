@@ -1,15 +1,16 @@
 ﻿using System.Collections.Generic;
 using Controller.Gameplay;
 using UnityEngine;
+using Util;
 
-namespace GameController
+namespace GameManager
 {
     public class InputController : MonoBehaviour
     {
         private List<PlayerController> _players = null;
     
         [SerializeField] 
-        private GameController _gameController = null;
+        private GameManager.GameController _gameController = null;
 
         public void Init(List<PlayerController> players)
         {
