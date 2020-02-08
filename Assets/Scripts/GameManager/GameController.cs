@@ -123,26 +123,21 @@ namespace GameManager
 			while (_running)
 			{
 				_currentTick++;
-				bool hasMoved = false;
+				_inputController.Tick();
 				
 				while (_eventQueue.Count != 0)
 				{
 					GameEvent gameEvent = _eventQueue.Dequeue();
 
-					if (gameEvent.HasJoystickInput && hasMoved)
-						continue;
-					
-					HandleEvent(gameEvent, out hasMoved);
+					HandleEvent(gameEvent);
 				}
 
 				yield return new WaitForSeconds(TickTime);
 			}
 		}
 
-		private void HandleEvent(GameEvent gameEvent, out bool hasMoved)
+		private void HandleEvent(GameEvent gameEvent)
 		{
-			hasMoved = gameEvent.HasJoystickInput;
-
 			if (gameEvent.HasJoystickInput)
 			{
 				gameEvent.PlayerController.Move(gameEvent.JoystickInput.normalized);

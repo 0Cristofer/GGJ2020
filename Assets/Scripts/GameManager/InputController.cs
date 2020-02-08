@@ -17,7 +17,7 @@ namespace GameManager
             _players = players;
         }
     
-        private void Update()
+        public void Tick()
         {
             if (_players == null)
                 return;
