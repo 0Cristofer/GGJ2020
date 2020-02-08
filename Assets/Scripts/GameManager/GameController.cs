@@ -32,7 +32,7 @@ namespace GameManager
 		private List<PlayerController> _playersControllers = null;
 
 		[SerializeField]
-		private TimerController _timerController;
+		private TimerController _timerController = default;
 		[SerializeField]
 		private TextMeshProUGUI _text = null;
 
@@ -50,8 +50,7 @@ namespace GameManager
 				bearItemController.Init();
 				bearItems.Add(bearItemController.BearItem);
 			}
-
-
+			
 			List<BearPart> player1BearItems = player1Objective
 				.Select(bearItemController => bearItemController.BearItem.BearPart).ToList();
 			List<BearPart> player2BearItems = player2Objective
@@ -79,7 +78,7 @@ namespace GameManager
 				System.Numerics.Vector2 topRight = spawnRects[i][1].transform.position.ToWorldVector2();
 				Rect spawnPos = new Rect(bottomLeft, topRight);
 
-				Player newPlayer = new Player(_playersControllers[i].name, bottomLeft,
+				Player newPlayer = new Player(_playersControllers[i].name, spawnPos.Center(),
 					new Objective(spawnPos, playerObjectives[i]));
 
 				_playersControllers[i].Init(newPlayer);
@@ -95,7 +94,7 @@ namespace GameManager
 				Destroy(toDestroyPlayerController.gameObject);
 			}
 
-			World world = new World(new WorldConfig(0.6f), players, bearItems);
+			World world = new World(new WorldConfig(0.62f), players, bearItems);
 			_worldController.Init(world);
 
 			StartTicking();
@@ -124,20 +123,26 @@ namespace GameManager
 			while (_running)
 			{
 				_currentTick++;
-
+				bool hasMoved = false;
+				
 				while (_eventQueue.Count != 0)
 				{
 					GameEvent gameEvent = _eventQueue.Dequeue();
 
-					HandleEvent(gameEvent);
+					if (gameEvent.HasJoystickInput && hasMoved)
+						continue;
+					
+					HandleEvent(gameEvent, out hasMoved);
 				}
 
 				yield return new WaitForSeconds(TickTime);
 			}
 		}
 
-		private void HandleEvent(GameEvent gameEvent)
+		private void HandleEvent(GameEvent gameEvent, out bool hasMoved)
 		{
+			hasMoved = gameEvent.HasJoystickInput;
+
 			if (gameEvent.HasJoystickInput)
 			{
 				gameEvent.PlayerController.Move(gameEvent.JoystickInput.normalized);

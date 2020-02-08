@@ -24,6 +24,7 @@ namespace Controller.Gameplay
 		#region INIT
 		public void Init(Player player)
 		{
+			transform.position = player.Position.ToUnityVector2();
 			player.AddListener(this);
 		}
 		#endregion

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6693816048074212732}
   - component: {fileID: 5685989939363691856}
   - component: {fileID: 5566816808297932705}
+  - component: {fileID: 1866262426}
   m_Layer: 0
   m_Name: PlayerGraphic
   m_TagString: Untagged
@@ -102,6 +103,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1866262426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258554130848796868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4bf636fbc13cb4ab79fd6823992ade, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MySpriteRenderer: {fileID: 0}
 --- !u!1 &1590374641489549898
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,3 +161,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animation: {fileID: 5566816808297932705}
+  _ordemlayers: {fileID: 1866262426}
+  _gameController: {fileID: 0}

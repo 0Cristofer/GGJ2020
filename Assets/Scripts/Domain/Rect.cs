@@ -22,5 +22,15 @@ namespace Domain
 
 			return isInsideX && isInsideY;
 		}
+
+		public Vector2 Center()
+		{
+			float difX = _topRightCorner.X - _leftBottomCorner.X;
+			float difY = _topRightCorner.Y - _leftBottomCorner.Y;
+			float midX = _leftBottomCorner.X + difX / 2;
+			float midY = _leftBottomCorner.Y + difY / 2;
+			
+			return new Vector2(midX, midY);
+		}
 	}
 }

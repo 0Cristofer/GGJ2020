@@ -36,5 +36,10 @@ namespace GameManager
         {
             SceneManager.LoadScene("MainMenu");
         }
+
+        public void OnQuitClick()
+        {
+            Application.Quit();
+        }
     }
 }
